@@ -1,0 +1,5 @@
+# Jekyll config for GitHub Pages -- inactive until Pages is enabled on the repo.
+title: "AI Capability Digest"
+description: "Weekly-checked insights on how AI tool capabilities can be applied in business practice."
+theme: minima
+show_excerpts: true

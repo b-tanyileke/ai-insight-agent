@@ -1,0 +1,107 @@
+{
+  "https://www.anthropic.com/policy-on-the-ai-exponential": {
+    "title": "Policy on the AI Exponential",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://www.anthropic.com/news/dxc-anthropic-alliance": {
+    "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://www.anthropic.com/news/tcs-anthropic-partnership": {
+    "title": "TCS and Anthropic partner to bring Claude to regulated industries",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://www.anthropic.com/news/anthropic-public-record": {
+    "title": "Results from the first Anthropic Public Record",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://www.anthropic.com/news/fable-mythos-access": {
+    "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem": {
+    "title": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://www.anthropic.com/news/introducing-claude-tag": {
+    "title": "Introducing Claude Tag",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://www.anthropic.com/news/claude-science-ai-workbench": {
+    "title": "Claude Science, an AI workbench for scientists, is now available",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://www.anthropic.com/news/claude-sonnet-5": {
+    "title": "Introducing Claude Sonnet 5",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://www.anthropic.com/news/redeploying-fable-5": {
+    "title": "Redeploying Fable 5",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework": {
+    "title": "More details on Fable 5’s cyber safeguards and our jailbreak framework",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b9946": {
+    "title": "ggml-org/llama.cpp b9946: b9946",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b9945": {
+    "title": "ggml-org/llama.cpp b9945: b9945",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b9941": {
+    "title": "ggml-org/llama.cpp b9941: b9941",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b9940": {
+    "title": "ggml-org/llama.cpp b9940: b9940",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b9939": {
+    "title": "ggml-org/llama.cpp b9939: b9939",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b9938": {
+    "title": "ggml-org/llama.cpp b9938: b9938",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b9937": {
+    "title": "ggml-org/llama.cpp b9937: b9937",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b9936": {
+    "title": "ggml-org/llama.cpp b9936: b9936",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b9935": {
+    "title": "ggml-org/llama.cpp b9935: b9935",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b9934": {
+    "title": "ggml-org/llama.cpp b9934: b9934",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-07-10T03:46:24.484849+00:00"
+  }
+}
