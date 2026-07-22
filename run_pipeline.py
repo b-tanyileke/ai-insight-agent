@@ -15,7 +15,8 @@ import sys
 from datetime import datetime, timezone
 
 from collect import run_collection
-from dedup import load_seen, save_seen, filter_new
+from config import MAX_ITEMS_PER_RUN
+from dedup import load_seen, save_seen, filter_new, mark_seen
 from synthesize import synthesize_items
 from publish_gate import select_for_publishing
 from generate_report import generate_reports
@@ -39,21 +40,33 @@ def run():
 
     # Stage 2: dedup
     seen = load_seen()
-    new_items, updated_seen = filter_new(all_items, seen, run_ts)
+    new_items, _ = filter_new(all_items, seen, run_ts)
     if not new_items:
         logger.info("No new items since last run. Nothing to synthesize.")
         return
 
+    # Cap how many we actually process this run -- bounds runtime/quota and
+    # guarantees forward progress even on a large backlog. Overflow items
+    # are simply left un-marked, so they reappear as "new" next run.
+    batch = new_items[:MAX_ITEMS_PER_RUN]
+    overflow = len(new_items) - len(batch)
+    if overflow > 0:
+        logger.info(
+            "%d new item(s) found -- processing %d this run (cap=%d), %d left for future run(s).",
+            len(new_items), len(batch), MAX_ITEMS_PER_RUN, overflow,
+        )
+
     # Stage 3: synthesize (title filter + enrichment + sufficiency gate all
     # happen inside this call, per-item)
-    logger.info("Synthesizing %d new item(s)...", len(new_items))
-    insights = synthesize_items(new_items)
-    logger.info("%d insight(s) judged significant out of %d new item(s).", len(insights), len(new_items))
+    logger.info("Synthesizing %d item(s)...", len(batch))
+    insights = synthesize_items(batch)
+    logger.info("%d insight(s) judged significant out of %d processed.", len(insights), len(batch))
 
-    # Persist dedup state now -- every new item has been through synthesis
-    # (successfully, skipped, or judged not-significant), so none of them
-    # should be reprocessed next cycle regardless of whether they became
-    # a published post.
+    # Persist dedup state now, for exactly the batch we processed -- not
+    # the full new_items list. If the run were to crash before this point,
+    # nothing gets marked seen and the whole batch retries next run; if it
+    # crashes after, only the un-processed overflow remains for next run.
+    updated_seen = mark_seen(batch, seen, run_ts)
     save_seen(updated_seen)
     logger.info("Dedup state saved (%d total items tracked).", len(updated_seen))
 

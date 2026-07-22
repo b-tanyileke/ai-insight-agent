@@ -93,10 +93,12 @@ import os
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 # "gemini-flash-latest" is an alias Google keeps pointed at their current
-# recommended free-tier-eligible Flash model, so this shouldn't need
-# manual updates when they ship a new version. Verify free-tier quota
-# for your key in aistudio.google.com if synthesis calls start failing.
-GEMINI_MODEL = "gemini-2.5-flash-lite"
+# recommended free-tier-eligible Flash model. Override with an env var if
+# you want a specific model (e.g. during testing, to conserve quota):
+#   export GEMINI_MODEL=gemini-2.5-flash-lite
+# Verify free-tier quota for your key in aistudio.google.com if synthesis
+# calls start failing with 429s.
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 
 # Minimum summary length (characters) for an item to be considered to have
@@ -111,6 +113,15 @@ MIN_SUMMARY_LENGTH = 100
 # Override to compare methods on real data:
 #   export TITLE_FILTER_METHOD=llm
 TITLE_FILTER_METHOD = os.environ.get("TITLE_FILTER_METHOD", "keyword")
+
+# Cap on how many NEW items get processed (title-filtered/enriched/
+# synthesized) in a single run, regardless of how many were found. This
+# bounds each run's duration and quota use -- a large backlog (e.g. the
+# very first run, or after a gap) drains gradually across several
+# scheduled runs instead of one run trying to do everything and either
+# taking hours or never finishing at all. Unprocessed overflow items are
+# NOT marked as seen, so they're picked up again next run.
+MAX_ITEMS_PER_RUN = int(os.environ.get("MAX_ITEMS_PER_RUN", "10"))
 
 # Even among insights that clear all gates, only publish this many per
 # cycle, ranked by confidence (see publish_gate.py). Keeps output volume

@@ -15,6 +15,11 @@ permissions:
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
+    # Hard safety net: the pipeline itself is bounded by MAX_ITEMS_PER_RUN
+    # and should finish in well under this, but if anything ever gets
+    # stuck (network stall, auth prompt, etc.) this kills the job instead
+    # of silently burning your free Actions minutes for hours.
+    timeout-minutes: 30
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -28,11 +33,17 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run pipeline
+        timeout-minutes: 20
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python run_pipeline.py
 
       - name: Commit and push any new posts / updated state
+        env:
+          # Forces git to fail immediately instead of hanging on an
+          # interactive credential prompt with no terminal to answer it --
+          # this is what silently hung the run for hours previously.
+          GIT_TERMINAL_PROMPT: '0'
         run: |
           git config user.name "ai-insight-agent"
           git config user.email "actions@users.noreply.github.com"

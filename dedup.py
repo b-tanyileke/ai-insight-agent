@@ -51,6 +51,24 @@ def save_seen(seen, path=STATE_PATH):
         json.dump(seen, f, indent=2, ensure_ascii=False)
 
 
+def mark_seen(items, seen, run_timestamp):
+    """Marks a specific list of items (already known to be new) as seen.
+    Used for batched processing -- only the items actually processed this
+    run get marked, so unprocessed overflow items correctly reappear as
+    'new' again on the next run instead of being lost."""
+    updated = dict(seen)
+    for item in items:
+        key = normalize_url(item.get("url", ""))
+        if not key:
+            continue
+        updated[key] = {
+            "title": item.get("title", ""),
+            "source": item.get("source", ""),
+            "first_seen": run_timestamp,
+        }
+    return updated
+
+
 def filter_new(items, seen, run_timestamp):
     """Split items into (new_items, updated_seen_dict).
 
