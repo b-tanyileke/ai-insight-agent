@@ -14,12 +14,12 @@ import logging
 import sys
 from datetime import datetime, timezone
 
-from collect import run_collection
-from config import MAX_ITEMS_PER_RUN
-from dedup import load_seen, save_seen, filter_new, mark_seen
-from synthesize import synthesize_items
-from publish_gate import select_for_publishing
-from generate_report import generate_reports
+from pipeline.collect import run_collection
+from pipeline.config import MAX_ITEMS_PER_RUN
+from pipeline.dedup import load_seen, save_seen, filter_new, mark_seen
+from pipeline.synthesize import synthesize_items
+from pipeline.publish_gate import select_for_publishing
+from pipeline.generate_report import generate_reports
 
 logging.basicConfig(
     level=logging.INFO,

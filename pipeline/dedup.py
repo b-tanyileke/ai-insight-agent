@@ -17,9 +17,11 @@ import logging
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
+from pipeline.config import DATA_DIR
+
 logger = logging.getLogger("dedup")
 
-STATE_PATH = Path(__file__).parent / "data" / "state" / "seen.json"
+STATE_PATH = DATA_DIR / "state" / "seen.json"
 
 
 def normalize_url(url):
@@ -114,7 +116,7 @@ if __name__ == "__main__":
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
-    raw_dir = Path(__file__).parent / "data" / "raw"
+    raw_dir = DATA_DIR / "raw"
     raw_files = sorted(raw_dir.glob("*.json"))
     if not raw_files:
         print("No raw collection files found -- run collect.py first.")

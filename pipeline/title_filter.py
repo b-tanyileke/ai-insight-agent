@@ -17,8 +17,8 @@ data before committing to one:
 
 import logging
 
-from config import TITLE_FILTER_METHOD
-from llm_client import call_gemini_raw, parse_json_response
+from pipeline.config import TITLE_FILTER_METHOD
+from pipeline.llm_client import call_gemini_raw, parse_json_response
 
 logger = logging.getLogger("title_filter")
 
@@ -27,8 +27,8 @@ logger = logging.getLogger("title_filter")
 # with a concrete business implementation angle.
 IRRELEVANT_KEYWORDS = [
     "raises $", "series a", "series b", "series c", "series d",
-    "funding round", "seed round", "valuation", "policy", "regulation", 
-    "regulatory", "compliance", "ipo", "acquires", "acquisition of", "merger",
+    "funding round", "seed round", "valuation",
+    "ipo", "acquires", "acquisition of", "merger",
     "lawsuit", "sues ", "sued", "settlement", "class action",
     "appoints", "joins as ceo", "joins as cfo", "joins as coo",
     "steps down", "resigns", "layoffs", "job cuts",

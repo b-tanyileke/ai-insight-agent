@@ -3,3 +3,12 @@ title: "AI Capability Digest"
 description: "Weekly-checked insights on how AI tool capabilities can be applied in business practice."
 theme: minima
 show_excerpts: true
+
+# Pagination -- jekyll-paginate (not -v2) is on GitHub Pages' native
+# plugin whitelist, so this works without a custom Actions build step.
+# Splits the home page post listing into pages of 5 instead of one
+# ever-growing list.
+plugins:
+  - jekyll-paginate
+paginate: 5
+paginate_path: "/page:num/"

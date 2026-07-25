@@ -14,7 +14,7 @@ Two-stage filter:
 
 import logging
 
-from config import MAX_POSTS_PER_CYCLE
+from pipeline.config import MAX_POSTS_PER_CYCLE, DATA_DIR
 
 logger = logging.getLogger("publish_gate")
 
@@ -57,7 +57,7 @@ if __name__ == "__main__":
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
-    test_file = Path(__file__).parent / "data" / "processed" / "test_insights.json"
+    test_file = DATA_DIR / "processed" / "test_insights.json"
     if not test_file.exists():
         print("No test_insights.json found -- run synthesize.py first.")
     else:

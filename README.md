@@ -1,5 +1,7 @@
 # AI insight agent
 
+> This is the project's technical documentation. The live blog homepage is `index.md`, rendered at your GitHub Pages URL.
+
 Autonomous, free-tools-only pipeline that checks for new AI capability
 developments on a schedule, filters for genuine business relevance, and
 publishes citation-grounded write-ups as a Jekyll-ready blog via GitHub Pages.
@@ -7,12 +9,27 @@ publishes citation-grounded write-ups as a Jekyll-ready blog via GitHub Pages.
 ## Pipeline stages
 
 ```
-collect.py -> dedup.py -> synthesize.py -> publish_gate.py -> generate_report.py
+pipeline/collect.py -> pipeline/dedup.py -> pipeline/synthesize.py -> pipeline/publish_gate.py -> pipeline/generate_report.py
 ```
 
-All wired together by `run_pipeline.py`, the single entry point the
-GitHub Actions workflow calls on a schedule. Each stage is also runnable
-standalone for testing (see each file's `if __name__ == "__main__"` block).
+All stage modules live under `pipeline/` (a proper Python package), wired
+together by `run_pipeline.py` at the repo root -- the single entry point
+the GitHub Actions workflow calls on a schedule.
+
+Each stage is also runnable standalone for testing, but since they're
+inside a package now, run them as modules from the repo root rather than
+as plain scripts:
+
+```
+python -m pipeline.collect
+python -m pipeline.dedup
+python -m pipeline.synthesize
+python -m pipeline.publish_gate
+python -m pipeline.generate_report
+```
+
+(`python pipeline/collect.py` won't work -- it needs `-m` so Python sets
+up the package import path correctly.)
 
 ## Local setup
 
@@ -31,6 +48,14 @@ export MAX_POSTS_PER_CYCLE=3                # default 5
 
 ## GitHub Actions (automated weekly runs)
 
+```mermaid
+flowchart TD
+    A["Trigger<br/>weekly cron or manual dispatch"] --> B["Actions runner starts<br/>checkout repo, install deps"]
+    B --> C["python run_pipeline.py<br/>collect, dedup, synthesize, publish"]
+    C --> D["Commit and push<br/>new posts + updated state"]
+    D --> E["GitHub Pages rebuilds<br/>live blog updates automatically"]
+```
+
 1. Push this repo to GitHub.
 2. Add your Gemini key as a repo secret: Settings -> Secrets and variables
    -> Actions -> New repository secret -> name it `GEMINI_API_KEY`.
@@ -38,11 +63,46 @@ export MAX_POSTS_PER_CYCLE=3                # default 5
    09:00 UTC, and can also be triggered manually from the Actions tab
    ("Run workflow" button, via `workflow_dispatch`).
 4. To publish as an actual blog: Settings -> Pages -> deploy from branch
-   -> select your default branch. `_config.yml` and `_posts/` are already
-   set up for Jekyll, no restructuring needed.
+   -> select your default branch. `_config.yml`, `index.md`, and `_posts/`
+   are already set up for Jekyll -- `index.md` is the site's actual
+   homepage (not this README), with pagination configured at 5 posts/page.
 
 Note: GitHub disables scheduled workflows on repos with no commits for
 60 days. Push anything to reactivate it if that happens.
+
+## Project Structure
+
+```text
+ai-insight-agent/
+├── .github/
+│   └── workflows/
+│       └── weekly_run.yml
+├── .gitignore
+├── README.md              (dev docs)
+├── _config.yml
+├── index.md               (site homepage)
+├── requirements.txt
+├── run_pipeline.py        (entry point, stays at root)
+├── pipeline/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── collectors.py
+│   ├── collect.py
+│   ├── dedup.py
+│   ├── enrich.py
+│   ├── llm_client.py
+│   ├── title_filter.py
+│   ├── synthesize.py
+│   ├── publish_gate.py
+│   └── generate_report.py
+├── data/
+│   ├── raw/            (gitignored, regenerable)
+│   ├── processed/      (gitignored, regenerable)
+│   └── state/
+│       └── seen.json   (committed — pipeline's memory)
+└── _posts/
+    └── *.md             (generated posts)
+```
 
 ## Design notes
 

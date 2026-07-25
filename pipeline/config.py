@@ -90,6 +90,15 @@ PROVIDER_WEIGHT_TARGET = {
 # Read from environment, never hardcode a key in this file.
 # Set it with: export GEMINI_API_KEY="your-key-here"
 import os
+from pathlib import Path
+
+# config.py now lives in pipeline/, so the repo root is one level up.
+# Every other module should import these rather than computing its own
+# Path(__file__).parent -- that would now incorrectly resolve to pipeline/
+# instead of the repo root where data/ and _posts/ actually live.
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / "data"
+POSTS_DIR = BASE_DIR / "_posts"
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 # "gemini-flash-latest" is an alias Google keeps pointed at their current
@@ -121,7 +130,7 @@ TITLE_FILTER_METHOD = os.environ.get("TITLE_FILTER_METHOD", "keyword")
 # scheduled runs instead of one run trying to do everything and either
 # taking hours or never finishing at all. Unprocessed overflow items are
 # NOT marked as seen, so they're picked up again next run.
-MAX_ITEMS_PER_RUN = int(os.environ.get("MAX_ITEMS_PER_RUN", "10"))
+MAX_ITEMS_PER_RUN = int(os.environ.get("MAX_ITEMS_PER_RUN", "15"))
 
 # Even among insights that clear all gates, only publish this many per
 # cycle, ranked by confidence (see publish_gate.py). Keeps output volume

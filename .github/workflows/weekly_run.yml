@@ -42,7 +42,7 @@ jobs:
         env:
           # Forces git to fail immediately instead of hanging on an
           # interactive credential prompt with no terminal to answer it --
-          # this is what silently hung the run for hours previously.
+          # this is necessary to prevent the workflow from hanging indefinitely.
           GIT_TERMINAL_PROMPT: '0'
         run: |
           git config user.name "ai-insight-agent"
