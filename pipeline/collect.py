@@ -1,7 +1,9 @@
 """
 Entry point for the collection stage.
 
-Run standalone: python collect.py
+Run standalone: python -m pipeline.collect
+(module invocation, run from the repo root, needed now that this file
+lives inside the pipeline/ package)
 Writes one JSON file per run to data/raw/<timestamp>.json containing
 every item pulled from every source that cycle (pre-dedup, pre-filter --
 that happens in the next stage).
@@ -10,10 +12,9 @@ that happens in the next stage).
 import json
 import logging
 from datetime import datetime, timezone
-from pathlib import Path
 
-from config import SOURCES
-from collectors import collect_source
+from pipeline.config import SOURCES, DATA_DIR as BASE_DATA_DIR
+from pipeline.collectors import collect_source
 
 logging.basicConfig(
     level=logging.INFO,
@@ -21,7 +22,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger("collect")
 
-DATA_DIR = Path(__file__).parent / "data" / "raw"
+DATA_DIR = BASE_DATA_DIR / "raw"
 
 
 def run_collection():

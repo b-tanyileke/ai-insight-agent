@@ -10,9 +10,9 @@ import re
 from datetime import date
 from pathlib import Path
 
-logger = logging.getLogger("generate_report")
+from pipeline.config import POSTS_DIR, DATA_DIR
 
-POSTS_DIR = Path(__file__).parent / "_posts"
+logger = logging.getLogger("generate_report")
 
 
 def slugify(title, max_words=10):
@@ -91,7 +91,7 @@ if __name__ == "__main__":
 
     from publish_gate import select_for_publishing
 
-    test_file = Path(__file__).parent / "data" / "processed" / "test_insights.json"
+    test_file = DATA_DIR / "processed" / "test_insights.json"
     if not test_file.exists():
         print("No test_insights.json found -- run synthesize.py first.")
     else:

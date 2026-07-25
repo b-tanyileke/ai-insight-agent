@@ -19,10 +19,10 @@ import json
 import logging
 import time
 
-from config import MIN_SUMMARY_LENGTH
-from enrich import get_content_for_synthesis
-from llm_client import call_gemini_raw, parse_json_response
-from title_filter import passes_title_filter
+from pipeline.config import MIN_SUMMARY_LENGTH, DATA_DIR
+from pipeline.enrich import get_content_for_synthesis
+from pipeline.llm_client import call_gemini_raw, parse_json_response
+from pipeline.title_filter import passes_title_filter
 import requests
 
 logger = logging.getLogger("synthesize")
@@ -147,7 +147,7 @@ def synthesize_items(items, delay_between_calls=4):
 if __name__ == "__main__":
     import sys
     from pathlib import Path
-    from config import GEMINI_API_KEY
+    from .config import GEMINI_API_KEY
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
@@ -155,7 +155,7 @@ if __name__ == "__main__":
         print('GEMINI_API_KEY not set. Run: export GEMINI_API_KEY="your-key-here"')
         sys.exit(1)
 
-    raw_dir = Path(__file__).parent / "data" / "raw"
+    raw_dir = DATA_DIR / "raw"
     raw_files = sorted(raw_dir.glob("*.json"))
     if not raw_files:
         print("No raw collection files found -- run collect.py first.")
@@ -167,7 +167,7 @@ if __name__ == "__main__":
     print(f"Testing synthesis on {min(3, len(items))} items from {raw_files[-1].name} (capped for a quick test)...")
     insights = synthesize_items(items[:3])
 
-    out_dir = Path(__file__).parent / "data" / "processed"
+    out_dir = DATA_DIR / "processed"
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / "test_insights.json"
     with open(out_path, "w", encoding="utf-8") as f:
