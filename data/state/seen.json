@@ -453,5 +453,80 @@
     "title": "Introducing the OpenAI Economic Research Exchange",
     "source": "OpenAI News",
     "first_seen": "2026-07-27T12:13:52.889024+00:00"
+  },
+  "https://www.anthropic.com/features/making-of-claude-code": {
+    "title": "The Making of Claude Code",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://www.anthropic.com/news/hard-questions": {
+    "title": "Inviting hard questions",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://www.anthropic.com/news/rare-disease-research-grants": {
+    "title": "Apply for Anthropic’s AI for Science rare disease research grants",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://www.anthropic.com/news/donation-public-first-action": {
+    "title": "Anthropic is donating another $20 million to Public First Action",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://www.anthropic.com/news/anthropic-economic-index-connector": {
+    "title": "Ask Claude about the Anthropic Economic Index",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://www.anthropic.com/news/economic-futures-research-fund-agenda": {
+    "title": "A research agenda for the Economic Futures Research Fund",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://www.anthropic.com/news/claude-opus-5": {
+    "title": "Introducing Claude Opus 5",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://www.anthropic.com/news/cognizant-anthropic": {
+    "title": "Cognizant and Anthropic expand their partnership to bring Claude to enterprise clients",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://www.anthropic.com/news/position-open-weights-models": {
+    "title": "Our position on open-weights models",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals": {
+    "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://www.anthropic.com/news/tino-cuellar": {
+    "title": "Mariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs Officer",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards": {
+    "title": "Improving Fable 5's biology safeguards",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities": {
+    "title": "Responding to the next frontier of critical cyber capabilities",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://openai.com/index/hsp-gruppe": {
+    "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
+  },
+  "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt": {
+    "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-10T10:10:05.902866+00:00"
   }
 }
