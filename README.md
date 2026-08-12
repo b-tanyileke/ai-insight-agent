@@ -129,3 +129,23 @@ ai-insight-agent/
   fetching for HN-linked pages is a possible v2 addition.
 - No cross-referencing between sources yet (e.g. detecting when Claude
   and Gemini ship similar capabilities in the same window).
+
+## Client profiles (V2 foundation)
+
+The `profiles/` directory holds reviewed business-context documents that
+future insight stages will use to tailor recommendations. The current weekly
+pipeline deliberately does **not** load a profile yet, so adding or editing a
+profile cannot change published output unexpectedly.
+
+Two example profiles are included:
+
+- `consulting-firm` for a mid-market professional-services consulting firm
+- `b2b-saas` for a growth-stage B2B SaaS company
+
+Each JSON document must follow `profiles/client-profile.schema.json` and is
+also validated by `pipeline.client_profiles`. Validate the examples locally
+with:
+
+```
+python -m unittest tests.test_client_profiles
+```

@@ -1,0 +1,34 @@
+{
+  "id": "consulting-firm",
+  "name": "Mid-market professional services consulting firm",
+  "business_type": "Consulting firm",
+  "industry": "Professional services",
+  "geography": "United States and Canada",
+  "ai_maturity": "piloting",
+  "strategic_priorities": [
+    "Increase proposal and account-team productivity",
+    "Package AI-enabled services for clients",
+    "Protect confidential client information"
+  ],
+  "target_functions": [
+    "Business development and proposal management",
+    "Client delivery",
+    "Knowledge management",
+    "Internal operations"
+  ],
+  "approved_vendors": [
+    "Microsoft 365",
+    "OpenAI",
+    "Anthropic"
+  ],
+  "data_sensitivity": [
+    "Confidential client deliverables",
+    "Commercial proposals",
+    "Employee information"
+  ],
+  "regulatory_considerations": [
+    "Client contractual confidentiality obligations",
+    "Privacy requirements",
+    "Professional-services quality review"
+  ]
+}

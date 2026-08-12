@@ -1,0 +1,36 @@
+{
+  "id": "b2b-saas",
+  "name": "Growth-stage B2B SaaS company",
+  "business_type": "Software-as-a-service company",
+  "industry": "B2B software",
+  "geography": "North America with European customers",
+  "ai_maturity": "scaling",
+  "strategic_priorities": [
+    "Improve product differentiation through AI features",
+    "Increase engineering and support productivity",
+    "Maintain customer trust and predictable unit economics"
+  ],
+  "target_functions": [
+    "Product management",
+    "Software engineering",
+    "Customer support",
+    "Sales and customer success"
+  ],
+  "approved_vendors": [
+    "AWS",
+    "OpenAI",
+    "Anthropic",
+    "Google Cloud"
+  ],
+  "data_sensitivity": [
+    "Customer application data",
+    "Usage telemetry",
+    "Source code",
+    "Customer support records"
+  ],
+  "regulatory_considerations": [
+    "Customer data-processing agreements",
+    "SOC 2 controls",
+    "GDPR obligations"
+  ]
+}
