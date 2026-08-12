@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Insight Agent client profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "business_type",
+    "industry",
+    "geography",
+    "ai_maturity",
+    "strategic_priorities",
+    "target_functions",
+    "approved_vendors",
+    "data_sensitivity",
+    "regulatory_considerations"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "name": {"type": "string", "minLength": 1},
+    "business_type": {"type": "string", "minLength": 1},
+    "industry": {"type": "string", "minLength": 1},
+    "geography": {"type": "string", "minLength": 1},
+    "ai_maturity": {"enum": ["exploring", "piloting", "scaling", "optimizing"]},
+    "strategic_priorities": {"$ref": "#/$defs/stringList"},
+    "target_functions": {"$ref": "#/$defs/stringList"},
+    "approved_vendors": {"$ref": "#/$defs/stringList"},
+    "data_sensitivity": {"$ref": "#/$defs/stringList"},
+    "regulatory_considerations": {"$ref": "#/$defs/stringList"}
+  },
+  "$defs": {
+    "stringList": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    }
+  }
+}
