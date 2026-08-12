@@ -75,10 +75,11 @@ own citation claims are never trusted directly.
 specificity, actionability, and safe value claims. A draft may receive one
 evidence-bound revision; anything not approved after that is held back.
 
-**8. Publish-gated** (`publish_gate.py`) -- drops anything with
-`confidence: speculative`, ranks the rest (confirmed before early-signal,
-longer `business_use_case` as tiebreaker), and caps at
-`MAX_POSTS_PER_CYCLE` (default 5).
+**8. Publish-gated** (`publish_gate.py`) -- applies an explicit, code-based
+rubric to the final critic result: approval, grounding >= 4, value-claim
+safety >= 4, specificity >= 3, actionability >= 3, and total score >= 14/20.
+Eligible insights are ranked by critic quality and then capped at
+`MAX_POSTS_PER_CYCLE` (default 5). Held items keep a reason.
 
 **9. Rendered post** (`generate_report.py`) -- insight fields mapped onto
 a markdown template with Jekyll front matter, written to
@@ -95,7 +96,7 @@ Start from the symptom, not the file list -- work top to bottom:
 | Good topics getting skipped | Filter too aggressive, or `MIN_SUMMARY_LENGTH` too high | `title_filter.py` keyword list, `config.py` |
 | Value/cost claims feel made up | Prompt issue, or genuinely thin source data | `synthesize.py`'s `SYSTEM_INSTRUCTION` |
 | Posts structurally shallow | Output schema too narrow or critic feedback is recurring | `synthesize.py` and `critique.py` prompts |
-| Right insight, bad formatting | Rendering only, not a data problem | `generate_report.py` |
+| Good draft did not publish | It missed a rubric threshold or the cycle cap | `publish_gate.py`, `publication_reason` |
 | Same source dominating every week | Source list imbalance | `config.py`'s `SOURCES` |
 | Run takes too long / few posts despite big backlog | Working through backlog, working as intended | `run_pipeline.py`, `MAX_ITEMS_PER_RUN` |
 

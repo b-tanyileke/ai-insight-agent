@@ -118,6 +118,9 @@ ai-insight-agent/
 - A critic scores each drafted insight for grounding, specificity, actionability,
   and safe value claims. It permits one constrained revision, then blocks any
   draft that is not approved before the existing publish gate runs.
+- The publish gate then applies transparent code thresholds to final critic
+  scores, ranks eligible insights by quality, caps the weekly volume, and
+  records why any insight was held back.
 - Title filter (title_filter.py) runs BEFORE enrichment/synthesis so
   irrelevant items (funding, hiring, legal news) never cost a network
   fetch or an LLM call.
