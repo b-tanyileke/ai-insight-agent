@@ -2,25 +2,20 @@
 Synthesis stage -- turns new items into structured insights using Gemini.
 
 Design principles (directly from earlier discussion):
-1. Grounding: the model is given ONLY this item's own title/summary/url/
-   source and explicitly told not to add outside facts or numbers it
-   can't support from that text. No web browsing, no "as I recall".
-2. Content-sufficiency gate: items without enough real information don't
-   get sent to the LLM at all -- garbage in, garbage out, and it wastes
-   free-tier quota. HN items are skipped entirely for direct synthesis
-   (see MIN_SUMMARY_LENGTH and the source_type check below) since their
-   summary field is HN metadata (points/comments), not article content.
-3. Every insight keeps the ORIGINAL item's real url/source/provider
-   attached after the fact -- never trust the model to echo these back
-   correctly, always splice in the real values we already know.
+1. Grounding: the model receives only structured evidence whose excerpts have
+   been checked against the source article by ``evidence.py``.
+2. Content sufficiency and evidence extraction are isolated in ``evidence.py``
+   so this module focuses only on business interpretation.
+3. Every insight keeps collector-supplied source metadata rather than trusting
+   the model to echo a citation correctly.
 """
 
 import json
 import logging
 import time
 
-from pipeline.config import MIN_SUMMARY_LENGTH, DATA_DIR
-from pipeline.enrich import get_content_for_synthesis
+from pipeline.config import DATA_DIR
+from pipeline.evidence import extract_evidence
 from pipeline.llm_client import call_gemini_raw, parse_json_response
 from pipeline.title_filter import passes_title_filter
 import requests
@@ -56,25 +51,20 @@ or you don't have enough information to say anything substantive), set "signific
 and keep the other fields short/empty -- do not pad them out with speculation."""
 
 
-def get_synthesizable_content(item):
-    """Returns (content, was_enriched, sufficient, reason)."""
-    if item.get("source_type") == "hn":
-        return "", False, False, "HN items are signal-only, not synthesized directly (see docstring)"
-
-    content, was_enriched = get_content_for_synthesis(item, MIN_SUMMARY_LENGTH)
-    if len(content) < MIN_SUMMARY_LENGTH:
-        return content, was_enriched, False, f"content still too short after enrichment attempt ({len(content)} chars < {MIN_SUMMARY_LENGTH})"
-    return content, was_enriched, True, ""
-
-
-def build_user_prompt(item, content):
+def build_user_prompt(item, evidence):
+    """Build a business-analysis prompt using only pre-validated evidence."""
+    claims = "\n".join(
+        f"- Claim: {claim['claim']}\n  Supporting excerpt: {claim['excerpt']}"
+        for claim in evidence["claims"]
+    )
     return (
         f"Title: {item.get('title', '')}\n"
         f"Source: {item.get('source', '')}\n"
         f"Provider: {item.get('provider', '')}\n"
         f"Published: {item.get('published', 'unknown')}\n"
         f"URL: {item.get('url', '')}\n"
-        f"Content:\n{content}"
+        f"Evidence summary: {evidence.get('summary', '')}\n"
+        f"Verified claims:\n{claims}"
     )
 
 
@@ -90,12 +80,19 @@ def synthesize_item(item, retry_delay=4):
         logger.info("Skipping (title filter) [%s]: %s", title_reason, item.get("title", "")[:60])
         return None
 
-    content, was_enriched, ok, reason = get_synthesizable_content(item)
-    if not ok:
-        logger.info("Skipping (insufficient content) [%s]: %s", reason, item.get("title", "")[:60])
+    try:
+        evidence = extract_evidence(item)
+    except (json.JSONDecodeError, KeyError, IndexError) as e:
+        logger.warning("Could not parse evidence for '%s': %s", item.get("title", "")[:60], e)
+        return None
+    except requests.RequestException as e:
+        logger.warning("Evidence request failed for '%s': %s", item.get("title", "")[:60], e)
         return None
 
-    prompt = build_user_prompt(item, content)
+    if not evidence:
+        return None
+
+    prompt = build_user_prompt(item, evidence)
     try:
         result = call_gemini(prompt)
     except requests.exceptions.HTTPError as e:
@@ -124,7 +121,8 @@ def synthesize_item(item, retry_delay=4):
     result["provider"] = item.get("provider", "")
     result["published"] = item.get("published", "")
     result["title"] = item.get("title", "")
-    result["content_enriched"] = was_enriched
+    result["content_enriched"] = evidence["content_enriched"]
+    result["evidence"] = evidence
 
     logger.info("Insight generated [%s/%s]: %s", result["provider"], result["confidence"], result["title"][:60])
     return result
