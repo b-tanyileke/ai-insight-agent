@@ -115,6 +115,9 @@ ai-insight-agent/
   excerpts from each source. Code checks every excerpt against the retrieved
   article before synthesis can use it; source metadata is still spliced in
   from the collector rather than trusting model-echoed citations.
+- A critic scores each drafted insight for grounding, specificity, actionability,
+  and safe value claims. It permits one constrained revision, then blocks any
+  draft that is not approved before the existing publish gate runs.
 - Title filter (title_filter.py) runs BEFORE enrichment/synthesis so
   irrelevant items (funding, hiring, legal news) never cost a network
   fetch or an LLM call.

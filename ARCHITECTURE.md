@@ -11,7 +11,7 @@ into "a small number of grounded, business-focused blog posts," through
 five stages that each narrow or transform the data for a different reason:
 
 ```text
-collect -> dedup -> title_filter -> enrich (conditional) -> evidence -> synthesize -> publish_gate -> generate_report
+collect -> dedup -> title_filter -> enrich (conditional) -> evidence -> synthesize -> critic -> publish_gate -> generate_report
 ```
 
 `title_filter`, enrichment, and evidence extraction happen per item inside
@@ -71,12 +71,16 @@ Immediately after, the REAL `source_url`, `source_name`, `provider`, and
 `published` from the original item are spliced back in -- the model's
 own citation claims are never trusted directly.
 
-**7. Publish-gated** (`publish_gate.py`) -- drops anything with
+**7. Critic review** (`critique.py`) -- scores the draft for evidence grounding,
+specificity, actionability, and safe value claims. A draft may receive one
+evidence-bound revision; anything not approved after that is held back.
+
+**8. Publish-gated** (`publish_gate.py`) -- drops anything with
 `confidence: speculative`, ranks the rest (confirmed before early-signal,
 longer `business_use_case` as tiebreaker), and caps at
 `MAX_POSTS_PER_CYCLE` (default 5).
 
-**8. Rendered post** (`generate_report.py`) -- insight fields mapped onto
+**9. Rendered post** (`generate_report.py`) -- insight fields mapped onto
 a markdown template with Jekyll front matter, written to
 `_posts/YYYY-MM-DD-slug.md`.
 
@@ -90,7 +94,7 @@ Start from the symptom, not the file list -- work top to bottom:
 | Wrong/irrelevant topics getting through | Title filter too permissive | `title_filter.py`, try switching `TITLE_FILTER_METHOD` |
 | Good topics getting skipped | Filter too aggressive, or `MIN_SUMMARY_LENGTH` too high | `title_filter.py` keyword list, `config.py` |
 | Value/cost claims feel made up | Prompt issue, or genuinely thin source data | `synthesize.py`'s `SYSTEM_INSTRUCTION` |
-| Posts structurally shallow | Output schema too narrow | `synthesize.py`'s JSON schema in the system instruction |
+| Posts structurally shallow | Output schema too narrow or critic feedback is recurring | `synthesize.py` and `critique.py` prompts |
 | Right insight, bad formatting | Rendering only, not a data problem | `generate_report.py` |
 | Same source dominating every week | Source list imbalance | `config.py`'s `SOURCES` |
 | Run takes too long / few posts despite big backlog | Working through backlog, working as intended | `run_pipeline.py`, `MAX_ITEMS_PER_RUN` |
@@ -107,9 +111,10 @@ once you know what feeds it.
 5. `enrich.py` -- when it triggers, how it fails safely
 6. `evidence.py` -- claim/excerpt grounding and source quality
 7. `llm_client.py` -> `synthesize.py` -- business analysis prompt and citation splicing
-8. `publish_gate.py` -- confidence ranking and the cap
-9. `generate_report.py` -- insight fields to markdown template
-10. `run_pipeline.py` -- wiring and execution order, read last
+8. `critique.py` -- draft-quality review and one-revision policy
+9. `publish_gate.py` -- confidence ranking and the cap
+10. `generate_report.py` -- insight fields to markdown template
+11. `run_pipeline.py` -- wiring and execution order, read last
 
 ## Key config knobs (`config.py`)
 

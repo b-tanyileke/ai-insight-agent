@@ -15,6 +15,7 @@ import logging
 import time
 
 from pipeline.config import DATA_DIR
+from pipeline.critique import critique_insight
 from pipeline.evidence import extract_evidence
 from pipeline.llm_client import call_gemini_raw, parse_json_response
 from pipeline.title_filter import passes_title_filter
@@ -73,6 +74,17 @@ def call_gemini(user_prompt):
     return parse_json_response(text)
 
 
+def build_revision_prompt(item, evidence, draft, feedback):
+    """Ask the existing insight writer for one evidence-bound revision."""
+    prompt = build_user_prompt(item, evidence)
+    prior_draft = json.dumps(draft, ensure_ascii=False)
+    return (
+        f"{prompt}\n\nOriginal draft:\n{prior_draft}\n\n"
+        f"Editor feedback: {feedback}\n"
+        "Revise the draft once. Keep the required JSON schema and use only the verified evidence."
+    )
+
+
 def synthesize_item(item, retry_delay=4):
     """Synthesize one item into an insight dict, or return None if skipped/failed."""
     title_ok, title_reason = passes_title_filter(item)
@@ -115,6 +127,33 @@ def synthesize_item(item, retry_delay=4):
         logger.info("Not significant: %s", item.get("title", "")[:60])
         return None
 
+    # The critic has no publishing authority, but a rejected or malformed
+    # review blocks this draft before it reaches the existing publish gate.
+    try:
+        critique = critique_insight(result, evidence)
+        if critique and critique["decision"] == "revise":
+            revised = call_gemini(build_revision_prompt(item, evidence, result, critique["feedback"]))
+            if not revised.get("significant"):
+                logger.info("Revision no longer significant: %s", item.get("title", "")[:60])
+                return None
+            final_critique = critique_insight(revised, evidence)
+            if not final_critique or final_critique["decision"] != "approve":
+                logger.info("Revision not approved: %s", item.get("title", "")[:60])
+                return None
+            result = revised
+            critique = {"initial": critique, "final": final_critique, "revision_applied": True}
+        elif not critique or critique["decision"] != "approve":
+            logger.info("Critic rejected insight: %s", item.get("title", "")[:60])
+            return None
+        else:
+            critique = {"final": critique, "revision_applied": False}
+    except (json.JSONDecodeError, KeyError, IndexError) as e:
+        logger.warning("Could not parse critic response for '%s': %s", item.get("title", "")[:60], e)
+        return None
+    except requests.RequestException as e:
+        logger.warning("Critic request failed for '%s': %s", item.get("title", "")[:60], e)
+        return None
+
     # Splice in the REAL source data -- never trust the model to echo it back.
     result["source_url"] = item.get("url", "")
     result["source_name"] = item.get("source", "")
@@ -123,6 +162,7 @@ def synthesize_item(item, retry_delay=4):
     result["title"] = item.get("title", "")
     result["content_enriched"] = evidence["content_enriched"]
     result["evidence"] = evidence
+    result["critique"] = critique
 
     logger.info("Insight generated [%s/%s]: %s", result["provider"], result["confidence"], result["title"][:60])
     return result

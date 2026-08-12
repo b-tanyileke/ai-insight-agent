@@ -130,7 +130,7 @@ TITLE_FILTER_METHOD = os.environ.get("TITLE_FILTER_METHOD", "keyword")
 # scheduled runs instead of one run trying to do everything and either
 # taking hours or never finishing at all. Unprocessed overflow items are
 # NOT marked as seen, so they're picked up again next run.
-MAX_ITEMS_PER_RUN = int(os.environ.get("MAX_ITEMS_PER_RUN", "15"))
+MAX_ITEMS_PER_RUN = int(os.environ.get("MAX_ITEMS_PER_RUN", "10"))
 
 # Even among insights that clear all gates, only publish this many per
 # cycle, ranked by confidence (see publish_gate.py). Keeps output volume
