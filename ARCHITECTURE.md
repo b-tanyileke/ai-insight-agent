@@ -11,11 +11,11 @@ into "a small number of grounded, business-focused blog posts," through
 five stages that each narrow or transform the data for a different reason:
 
 ```text
-collect -> dedup -> title_filter -> enrich (conditional) -> synthesize -> publish_gate -> generate_report
+collect -> dedup -> title_filter -> enrich (conditional) -> evidence -> synthesize -> publish_gate -> generate_report
 ```
 
-`title_filter` and `enrich` happen *inside* `synthesize.py`, per item, not
-as separate top-level stages -- see the synthesize section below.
+`title_filter`, enrichment, and evidence extraction happen per item inside
+the synthesis flow rather than as separate top-level batch stages.
 
 ## What the data looks like at each stage
 
@@ -53,10 +53,13 @@ feed excerpt with real content. Falls back silently to the original
 summary if the fetch fails -- never crashes, just likely gets filtered
 out next by the sufficiency gate.
 
-**5. Synthesized insight** (`synthesize.py` + `llm_client.py`) -- the
-core transformation. Whatever content survived steps 3-4 gets sent to
-Gemini with a system prompt that explicitly forbids adding facts beyond
-what's given. Gemini returns:
+**5. Structured evidence** (`evidence.py`) -- extracts one to three factual
+claims with short, verbatim source excerpts. Code rejects an evidence record
+unless every excerpt appears in the retrieved source text. It also attaches a
+transparent source-quality label based on source type.
+
+**6. Synthesized insight** (`synthesize.py` + `llm_client.py`) -- the core
+business interpretation. It receives only validated evidence, then returns:
 
 ```json
 {"significant": true, "confidence": "confirmed|early-signal|speculative",
@@ -68,12 +71,12 @@ Immediately after, the REAL `source_url`, `source_name`, `provider`, and
 `published` from the original item are spliced back in -- the model's
 own citation claims are never trusted directly.
 
-**6. Publish-gated** (`publish_gate.py`) -- drops anything with
+**7. Publish-gated** (`publish_gate.py`) -- drops anything with
 `confidence: speculative`, ranks the rest (confirmed before early-signal,
 longer `business_use_case` as tiebreaker), and caps at
 `MAX_POSTS_PER_CYCLE` (default 5).
 
-**7. Rendered post** (`generate_report.py`) -- insight fields mapped onto
+**8. Rendered post** (`generate_report.py`) -- insight fields mapped onto
 a markdown template with Jekyll front matter, written to
 `_posts/YYYY-MM-DD-slug.md`.
 
@@ -83,7 +86,7 @@ Start from the symptom, not the file list -- work top to bottom:
 
 | Symptom | Likely cause | Check |
 |---|---|---|
-| Posts feel generic/vague | Source article was thin and enrichment failed | `enrich.py` logs; `content_enriched` flag on the insight |
+| Posts feel generic/vague | Source evidence was thin or unsupported | `evidence.py` logs; evidence excerpts on the insight |
 | Wrong/irrelevant topics getting through | Title filter too permissive | `title_filter.py`, try switching `TITLE_FILTER_METHOD` |
 | Good topics getting skipped | Filter too aggressive, or `MIN_SUMMARY_LENGTH` too high | `title_filter.py` keyword list, `config.py` |
 | Value/cost claims feel made up | Prompt issue, or genuinely thin source data | `synthesize.py`'s `SYSTEM_INSTRUCTION` |
@@ -102,10 +105,11 @@ once you know what feeds it.
 3. `dedup.py` -- `seen.json` shape; "seen" means processed, not published
 4. `title_filter.py` -- the two strategies, why keyword is the default
 5. `enrich.py` -- when it triggers, how it fails safely
-6. `llm_client.py` -> `synthesize.py` -- the core stage: prompt, schema, citation splicing
-7. `publish_gate.py` -- confidence ranking and the cap
-8. `generate_report.py` -- insight fields to markdown template
-9. `run_pipeline.py` -- wiring and execution order, read last
+6. `evidence.py` -- claim/excerpt grounding and source quality
+7. `llm_client.py` -> `synthesize.py` -- business analysis prompt and citation splicing
+8. `publish_gate.py` -- confidence ranking and the cap
+9. `generate_report.py` -- insight fields to markdown template
+10. `run_pipeline.py` -- wiring and execution order, read last
 
 ## Key config knobs (`config.py`)
 

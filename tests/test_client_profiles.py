@@ -11,8 +11,10 @@ from pipeline.client_profiles import (
 
 class ClientProfileTests(unittest.TestCase):
     def test_example_profiles_are_discoverable_and_valid(self):
-        # The shipped examples are part of the feature contract: a future
-        # refactor must not silently make either profile unavailable.
+        """
+        The shipped examples are part of the feature contract: a future
+        refactor must not silently make either profile unavailable.
+        """
         self.assertEqual(list_profiles(), ["b2b-saas", "consulting-firm"])
 
         consulting = load_profile("consulting-firm")
@@ -22,8 +24,10 @@ class ClientProfileTests(unittest.TestCase):
         self.assertEqual(saas["business_type"], "Software-as-a-service company")
 
     def test_invalid_maturity_is_rejected(self):
-        # Constraining maturity gives later prompting/routing code a known,
-        # reviewable set of values rather than accepting arbitrary labels.
+        """ 
+        Constraining maturity gives later prompting/routing code a known,
+        reviewable set of values rather than accepting arbitrary labels.
+        """
         profile = {
             "id": "example",
             "name": "Example",
@@ -41,8 +45,10 @@ class ClientProfileTests(unittest.TestCase):
             validate_profile(profile)
 
     def test_profile_id_cannot_escape_profile_directory(self):
-        # Profile identifiers come from configuration in future stages; reject
-        # path traversal so they can only resolve to files in profiles/.
+        """ 
+        Profile identifiers come from configuration in future stages; reject
+        path traversal so they can only resolve to files in profiles/.
+        """
         with self.assertRaises(ClientProfileError):
             load_profile("../consulting-firm")
 

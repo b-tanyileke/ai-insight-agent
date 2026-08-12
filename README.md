@@ -111,10 +111,10 @@ ai-insight-agent/
 - Dedup state (data/state/seen.json) is only saved AFTER synthesis
   completes for a run's new items, so a mid-run crash doesn't silently
   mark unsent items as seen.
-- Synthesis is grounded strictly in each item's own content (title +
-  enriched article text where needed) -- the model is told not to add
-  outside facts, and every insight has the real source URL spliced back
-  in after the fact rather than trusting model-echoed citations.
+- Evidence extraction selects one to three claims with verbatim supporting
+  excerpts from each source. Code checks every excerpt against the retrieved
+  article before synthesis can use it; source metadata is still spliced in
+  from the collector rather than trusting model-echoed citations.
 - Title filter (title_filter.py) runs BEFORE enrichment/synthesis so
   irrelevant items (funding, hiring, legal news) never cost a network
   fetch or an LLM call.
