@@ -163,6 +163,9 @@ def synthesize_item(item, retry_delay=4):
     result["content_enriched"] = evidence["content_enriched"]
     result["evidence"] = evidence
     result["critique"] = critique
+    # Clustering may attach related coverage. It is displayed separately from
+    # evidence because this draft was grounded only in the representative.
+    result["related_sources"] = item.get("related_sources", [])
 
     logger.info("Insight generated [%s/%s]: %s", result["provider"], result["confidence"], result["title"][:60])
     return result

@@ -11,7 +11,7 @@ into "a small number of grounded, business-focused blog posts," through
 five stages that each narrow or transform the data for a different reason:
 
 ```text
-collect -> dedup -> title_filter -> enrich (conditional) -> evidence -> synthesize -> critic -> publish_gate -> generate_report
+collect -> dedup -> cluster -> title_filter -> enrich (conditional) -> evidence -> synthesize -> critic -> publish_gate -> generate_report
 ```
 
 `title_filter`, enrichment, and evidence extraction happen per item inside
@@ -37,7 +37,12 @@ then capped to `MAX_ITEMS_PER_RUN` (default 15) so one run can't spiral
 into hours of work. Overflow items simply aren't marked seen, so they
 reappear as "new" next run -- the backlog drains gradually.
 
-**3. Title-filtered** (`title_filter.py`) -- runs first inside
+**3. Clustered** (`clustering.py`) -- groups items with the same normalized
+URL or highly similar substantive titles. The selected representative retains
+the cluster's source links as related coverage; no semantic/embedding service
+is needed.
+
+**4. Title-filtered** (`title_filter.py`) -- runs first inside
 `synthesize_item()`, before anything costs money or a network call.
 Two swappable strategies (`config.TITLE_FILTER_METHOD`):
 
@@ -46,19 +51,19 @@ Two swappable strategies (`config.TITLE_FILTER_METHOD`):
 
 - `llm`: one cheap Gemini call per item, more nuanced, small quota cost.
 
-**4. Enriched** (`enrich.py`) -- only triggered if the item's `summary`
+**5. Enriched** (`enrich.py`) -- only triggered if the item's `summary`
 is shorter than `config.MIN_SUMMARY_LENGTH`. Fetches the real article at
 `url` and extracts the main text (via trafilatura), replacing the thin
 feed excerpt with real content. Falls back silently to the original
 summary if the fetch fails -- never crashes, just likely gets filtered
 out next by the sufficiency gate.
 
-**5. Structured evidence** (`evidence.py`) -- extracts one to three factual
+**6. Structured evidence** (`evidence.py`) -- extracts one to three factual
 claims with short, verbatim source excerpts. Code rejects an evidence record
 unless every excerpt appears in the retrieved source text. It also attaches a
 transparent source-quality label based on source type.
 
-**6. Synthesized insight** (`synthesize.py` + `llm_client.py`) -- the core
+**7. Synthesized insight** (`synthesize.py` + `llm_client.py`) -- the core
 business interpretation. It receives only validated evidence, then returns:
 
 ```json
@@ -71,17 +76,17 @@ Immediately after, the REAL `source_url`, `source_name`, `provider`, and
 `published` from the original item are spliced back in -- the model's
 own citation claims are never trusted directly.
 
-**7. Critic review** (`critique.py`) -- scores the draft for evidence grounding,
+**8. Critic review** (`critique.py`) -- scores the draft for evidence grounding,
 specificity, actionability, and safe value claims. A draft may receive one
 evidence-bound revision; anything not approved after that is held back.
 
-**8. Publish-gated** (`publish_gate.py`) -- applies an explicit, code-based
+**9. Publish-gated** (`publish_gate.py`) -- applies an explicit, code-based
 rubric to the final critic result: approval, grounding >= 4, value-claim
 safety >= 4, specificity >= 3, actionability >= 3, and total score >= 14/20.
 Eligible insights are ranked by critic quality and then capped at
 `MAX_POSTS_PER_CYCLE` (default 5). Held items keep a reason.
 
-**9. Rendered post** (`generate_report.py`) -- insight fields mapped onto
+**10. Rendered post** (`generate_report.py`) -- insight fields mapped onto
 a markdown template with Jekyll front matter, written to
 `_posts/YYYY-MM-DD-slug.md`.
 
@@ -97,7 +102,7 @@ Start from the symptom, not the file list -- work top to bottom:
 | Value/cost claims feel made up | Prompt issue, or genuinely thin source data | `synthesize.py`'s `SYSTEM_INSTRUCTION` |
 | Posts structurally shallow | Output schema too narrow or critic feedback is recurring | `synthesize.py` and `critique.py` prompts |
 | Good draft did not publish | It missed a rubric threshold or the cycle cap | `publish_gate.py`, `publication_reason` |
-| Same source dominating every week | Source list imbalance | `config.py`'s `SOURCES` |
+| Similar developments became repeat posts | Title matching is too strict | `clustering.py` thresholds |
 | Run takes too long / few posts despite big backlog | Working through backlog, working as intended | `run_pipeline.py`, `MAX_ITEMS_PER_RUN` |
 
 ## Suggested file reading order
@@ -108,14 +113,15 @@ once you know what feeds it.
 1. `config.py` -- the control panel, every tunable knob with reasoning
 2. `collectors.py` -> `collect.py` -- raw item shape, per-source fault tolerance
 3. `dedup.py` -- `seen.json` shape; "seen" means processed, not published
-4. `title_filter.py` -- the two strategies, why keyword is the default
-5. `enrich.py` -- when it triggers, how it fails safely
-6. `evidence.py` -- claim/excerpt grounding and source quality
-7. `llm_client.py` -> `synthesize.py` -- business analysis prompt and citation splicing
-8. `critique.py` -- draft-quality review and one-revision policy
-9. `publish_gate.py` -- confidence ranking and the cap
-10. `generate_report.py` -- insight fields to markdown template
-11. `run_pipeline.py` -- wiring and execution order, read last
+4. `clustering.py` -- conservative same-development grouping
+5. `title_filter.py` -- the two strategies, why keyword is the default
+6. `enrich.py` -- when it triggers, how it fails safely
+7. `evidence.py` -- claim/excerpt grounding and source quality
+8. `llm_client.py` -> `synthesize.py` -- business analysis prompt and citation splicing
+9. `critique.py` -- draft-quality review and one-revision policy
+10. `publish_gate.py` -- confidence ranking and the cap
+11. `generate_report.py` -- insight fields to markdown template
+12. `run_pipeline.py` -- wiring and execution order, read last
 
 ## Key config knobs (`config.py`)
 
