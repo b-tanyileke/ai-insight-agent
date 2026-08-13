@@ -28,6 +28,9 @@ def render_post(insight, post_date=None):
     """Renders one insight as a full markdown post (front matter + body)."""
     post_date = post_date or date.today()
     tags = [insight.get("provider", "other"), "business-ai"]
+    profile_id = insight.get("client_profile_id", "")
+    if profile_id:
+        tags.append(profile_id)
 
     front_matter = (
         "---\n"
@@ -36,10 +39,12 @@ def render_post(insight, post_date=None):
         f"tool: {insight.get('provider', 'other')}\n"
         f"tags: [{', '.join(tags)}]\n"
         f"confidence: {insight.get('confidence', 'unknown')}\n"
+        f"client_profile: {profile_id}\n"
         "---\n"
     )
 
     body = (
+        f"\n*Tailored for: {insight.get('client_profile_name', 'a general business audience')}*\n"
         f"\n## What it is\n{insight.get('what_it_is', '').strip()}\n"
         f"\n## Business use case\n{insight.get('business_use_case', '').strip()}\n"
         f"\n## Estimated value\n{insight.get('estimated_value', '').strip()}\n"

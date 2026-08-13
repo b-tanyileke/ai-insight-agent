@@ -203,4 +203,9 @@ def collect_source(source):
     if not collector:
         logger.warning("Unknown source type '%s' for %s -- skipping", source["type"], source["name"])
         return []
-    return collector(source)
+    items = collector(source)
+    # The source owns this editorial signal, so attach it centrally rather
+    # than repeating the field in every collector's normalized item shape.
+    for item in items:
+        item["business_priority"] = source.get("business_priority", "medium")
+    return items

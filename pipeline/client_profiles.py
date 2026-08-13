@@ -30,6 +30,7 @@ REQUIRED_LIST_FIELDS = (
     "approved_vendors",
     "data_sensitivity",
     "regulatory_considerations",
+    "screening_terms",
 )
 VALID_AI_MATURITY = {"exploring", "piloting", "scaling", "optimizing"}
 PROFILE_ID_PATTERN = re.compile(r"^[a-z0-9-]+$")

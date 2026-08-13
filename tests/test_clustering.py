@@ -46,6 +46,16 @@ class ClusteringTests(unittest.TestCase):
         self.assertFalse(items_match(first, second))
         self.assertEqual(len(cluster_items([first, second])), 2)
 
+    def test_high_priority_source_becomes_representative(self):
+        # Equivalent coverage should use the editorially preferred source for
+        # evidence extraction, even if a lower-priority mirror has more text.
+        mirror = item("OpenAI GPT 5 Codex enterprise teams", "https://mirror.example/article", "Mirror", summary="x" * 500)
+        mirror["business_priority"] = "low"
+        official = item("OpenAI introduces GPT 5 Codex for enterprise teams", "https://openai.example/article", "Official", summary="short")
+        official["business_priority"] = "high"
+        representative = cluster_items([mirror, official])[0]
+        self.assertEqual(representative["source"], "Official")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -11,7 +11,7 @@ into "a small number of grounded, business-focused blog posts," through
 five stages that each narrow or transform the data for a different reason:
 
 ```text
-collect -> dedup -> cluster -> title_filter -> enrich (conditional) -> evidence -> synthesize -> critic -> publish_gate -> generate_report
+collect -> dedup -> cluster -> profile screen -> title_filter -> enrich (conditional) -> evidence -> synthesize -> critic -> publish_gate -> generate_report
 ```
 
 `title_filter`, enrichment, and evidence extraction happen per item inside
@@ -42,7 +42,13 @@ URL or highly similar substantive titles. The selected representative retains
 the cluster's source links as related coverage; no semantic/embedding service
 is needed.
 
-**4. Title-filtered** (`title_filter.py`) -- runs first inside
+**4. Profile-screened** (`screening.py`) -- scores every clustered candidate
+from the active profile's explicit screening terms in its title/summary plus
+the source's business priority. Only the highest-scoring candidates meeting
+the threshold advance to expensive stages; low-relevance items are recorded
+as seen, while capacity overflow remains for later runs.
+
+**5. Title-filtered** (`title_filter.py`) -- runs first inside
 `synthesize_item()`, before anything costs money or a network call.
 Two swappable strategies (`config.TITLE_FILTER_METHOD`):
 
@@ -51,20 +57,21 @@ Two swappable strategies (`config.TITLE_FILTER_METHOD`):
 
 - `llm`: one cheap Gemini call per item, more nuanced, small quota cost.
 
-**5. Enriched** (`enrich.py`) -- only triggered if the item's `summary`
+**6. Enriched** (`enrich.py`) -- only triggered if the item's `summary`
 is shorter than `config.MIN_SUMMARY_LENGTH`. Fetches the real article at
 `url` and extracts the main text (via trafilatura), replacing the thin
 feed excerpt with real content. Falls back silently to the original
 summary if the fetch fails -- never crashes, just likely gets filtered
 out next by the sufficiency gate.
 
-**6. Structured evidence** (`evidence.py`) -- extracts one to three factual
+**7. Structured evidence** (`evidence.py`) -- extracts one to three factual
 claims with short, verbatim source excerpts. Code rejects an evidence record
 unless every excerpt appears in the retrieved source text. It also attaches a
 transparent source-quality label based on source type.
 
-**7. Synthesized insight** (`synthesize.py` + `llm_client.py`) -- the core
-business interpretation. It receives only validated evidence, then returns:
+**8. Synthesized insight** (`synthesize.py` + `llm_client.py`) -- the core
+business interpretation. It receives only validated evidence plus the selected
+reviewed client profile, then returns:
 
 ```json
 {"significant": true, "confidence": "confirmed|early-signal|speculative",
@@ -76,17 +83,18 @@ Immediately after, the REAL `source_url`, `source_name`, `provider`, and
 `published` from the original item are spliced back in -- the model's
 own citation claims are never trusted directly.
 
-**8. Critic review** (`critique.py`) -- scores the draft for evidence grounding,
-specificity, actionability, and safe value claims. A draft may receive one
-evidence-bound revision; anything not approved after that is held back.
+**9. Critic review** (`critique.py`) -- scores the draft for evidence grounding,
+specificity, actionability, safe value claims, and fit with the same client
+profile. A draft may receive one evidence-bound revision; anything not
+approved after that is held back.
 
-**9. Publish-gated** (`publish_gate.py`) -- applies an explicit, code-based
+**10. Publish-gated** (`publish_gate.py`) -- applies an explicit, code-based
 rubric to the final critic result: approval, grounding >= 4, value-claim
 safety >= 4, specificity >= 3, actionability >= 3, and total score >= 14/20.
 Eligible insights are ranked by critic quality and then capped at
 `MAX_POSTS_PER_CYCLE` (default 5). Held items keep a reason.
 
-**10. Rendered post** (`generate_report.py`) -- insight fields mapped onto
+**11. Rendered post** (`generate_report.py`) -- insight fields mapped onto
 a markdown template with Jekyll front matter, written to
 `_posts/YYYY-MM-DD-slug.md`.
 
@@ -97,7 +105,7 @@ Start from the symptom, not the file list -- work top to bottom:
 | Symptom | Likely cause | Check |
 |---|---|---|
 | Posts feel generic/vague | Source evidence was thin or unsupported | `evidence.py` logs; evidence excerpts on the insight |
-| Wrong/irrelevant topics getting through | Title filter too permissive | `title_filter.py`, try switching `TITLE_FILTER_METHOD` |
+| Wrong/irrelevant topics getting through | Profile terms or source priorities are too broad | profile `screening_terms`, `config.py` |
 | Good topics getting skipped | Filter too aggressive, or `MIN_SUMMARY_LENGTH` too high | `title_filter.py` keyword list, `config.py` |
 | Value/cost claims feel made up | Prompt issue, or genuinely thin source data | `synthesize.py`'s `SYSTEM_INSTRUCTION` |
 | Posts structurally shallow | Output schema too narrow or critic feedback is recurring | `synthesize.py` and `critique.py` prompts |
@@ -114,14 +122,15 @@ once you know what feeds it.
 2. `collectors.py` -> `collect.py` -- raw item shape, per-source fault tolerance
 3. `dedup.py` -- `seen.json` shape; "seen" means processed, not published
 4. `clustering.py` -- conservative same-development grouping
-5. `title_filter.py` -- the two strategies, why keyword is the default
-6. `enrich.py` -- when it triggers, how it fails safely
-7. `evidence.py` -- claim/excerpt grounding and source quality
-8. `llm_client.py` -> `synthesize.py` -- business analysis prompt and citation splicing
-9. `critique.py` -- draft-quality review and one-revision policy
-10. `publish_gate.py` -- confidence ranking and the cap
-11. `generate_report.py` -- insight fields to markdown template
-12. `run_pipeline.py` -- wiring and execution order, read last
+5. `screening.py` -- deterministic profile-aware candidate ranking
+6. `title_filter.py` -- the two strategies, why keyword is the default
+7. `enrich.py` -- when it triggers, how it fails safely
+8. `evidence.py` -- claim/excerpt grounding and source quality
+9. `llm_client.py` -> `synthesize.py` -- business analysis prompt and citation splicing
+10. `critique.py` -- draft-quality review and one-revision policy
+11. `publish_gate.py` -- confidence ranking and the cap
+12. `generate_report.py` -- insight fields to markdown template
+13. `run_pipeline.py` -- wiring and execution order, read last
 
 ## Key config knobs (`config.py`)
 
@@ -130,3 +139,5 @@ once you know what feeds it.
 - `MIN_SUMMARY_LENGTH` -- threshold for triggering enrichment
 - `TITLE_FILTER_METHOD` -- `keyword` | `llm` | `none`
 - `GEMINI_MODEL` -- overridable without code changes, e.g. for quota management
+- `CLIENT_PROFILE_ID` -- selected reviewed profile; `consulting-firm` by default
+- `MIN_SCREENING_SCORE` -- minimum deterministic profile-screening score; default 4

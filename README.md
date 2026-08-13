@@ -141,10 +141,9 @@ ai-insight-agent/
 
 ## Client profiles (V2 foundation)
 
-The `profiles/` directory holds reviewed business-context documents that
-future insight stages will use to tailor recommendations. The current weekly
-pipeline deliberately does **not** load a profile yet, so adding or editing a
-profile cannot change published output unexpectedly.
+The `profiles/` directory holds reviewed business-context documents that the
+writer and critic use to tailor recommendations. Review profile changes as
+carefully as code changes, because they can change published output.
 
 Two example profiles are included:
 
@@ -158,3 +157,14 @@ with:
 ```
 python -m unittest tests.test_client_profiles
 ```
+
+The pipeline now uses the selected profile to tailor its writer and critic
+prompts. `consulting-firm` is the default; set `CLIENT_PROFILE_ID=b2b-saas`
+to run for the B2B SaaS example. Posts retain only the selected profile's ID
+and name, not its full business context.
+
+Before model calls, the pipeline scores all clustered candidates using the
+selected profile's reviewed `screening_terms` and each source's configured
+`business_priority`. It then applies `MAX_ITEMS_PER_RUN` to the best-scoring
+candidates, rather than the first links collected. Set `MIN_SCREENING_SCORE`
+to make this gate stricter or looser; the default is `4`.

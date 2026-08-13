@@ -1,5 +1,5 @@
 """
-Orchestrates the full pipeline: collect -> dedup -> cluster -> synthesize ->
+Orchestrates the full pipeline: collect -> dedup -> cluster -> screen -> synthesize ->
 publish_gate -> generate_report. This is the single entry point the
 GitHub Actions cron job calls.
 
@@ -15,9 +15,11 @@ import sys
 from datetime import datetime, timezone
 
 from pipeline.collect import run_collection
+from pipeline.client_profiles import load_profile
 from pipeline.clustering import cluster_items
-from pipeline.config import MAX_ITEMS_PER_RUN
-from pipeline.dedup import load_seen, save_seen, filter_new, mark_seen
+from pipeline.config import CLIENT_PROFILE_ID, MAX_ITEMS_PER_RUN, MIN_SCREENING_SCORE
+from pipeline.dedup import load_seen, normalize_url, save_seen, filter_new, mark_seen
+from pipeline.screening import screen_candidates
 from pipeline.synthesize import synthesize_items
 from pipeline.publish_gate import select_for_publishing
 from pipeline.generate_report import generate_reports
@@ -27,6 +29,17 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
 )
 logger = logging.getLogger("run_pipeline")
+
+
+def cluster_members(items, representatives):
+    """Return original items belonging to selected or low-relevance clusters."""
+    member_urls = {
+        normalize_url(source.get("url", ""))
+        for representative in representatives
+        for source in representative.get("related_sources", [])
+        if source.get("url")
+    }
+    return [item for item in items if normalize_url(item.get("url", "")) in member_urls]
 
 
 def run():
@@ -46,41 +59,63 @@ def run():
         logger.info("No new items since last run. Nothing to synthesize.")
         return
 
-    # Cap how many we actually process this run -- bounds runtime/quota and
-    # guarantees forward progress even on a large backlog. Overflow items
-    # are simply left un-marked, so they reappear as "new" next run.
-    batch = new_items[:MAX_ITEMS_PER_RUN]
-    overflow = len(new_items) - len(batch)
-    if overflow > 0:
+    # Stage 3: cluster all new items before selection so duplicate coverage
+    # cannot consume several places in the limited weekly processing budget.
+    clustered_items = cluster_items(new_items)
+    logger.info("Clustered %d new item(s) into %d candidate(s).", len(new_items), len(clustered_items))
+
+    # Stage 4: rank every representative for the selected profile. This is
+    # deterministic and cheap; the expensive model stages see only selected
+    # candidates, not whichever links happened to arrive first.
+    profile = load_profile(CLIENT_PROFILE_ID)
+    selected, held = screen_candidates(
+        clustered_items, profile, MIN_SCREENING_SCORE, MAX_ITEMS_PER_RUN
+    )
+    low_relevance = [item for item in held if item["screening_status"] == "low_relevance"]
+    overflow = [item for item in held if item["screening_status"] == "capacity_overflow"]
+    logger.info(
+        "Screened %d candidate(s) for %s: %d selected, %d low relevance, %d held for a later run.",
+        len(clustered_items), profile["id"], len(selected), len(low_relevance), len(overflow),
+    )
+    for candidate in selected:
         logger.info(
-            "%d new item(s) found -- processing %d this run (cap=%d), %d left for future run(s).",
-            len(new_items), len(batch), MAX_ITEMS_PER_RUN, overflow,
+            "Selected [%d]: %s (%s)",
+            candidate["screening_score"],
+            candidate.get("title", "")[:60],
+            "; ".join(candidate["screening_reasons"]),
         )
 
-    # Stage 3: cluster only obvious duplicates before any model calls. We
-    # still mark every batch item as seen below, including clustered members.
-    clustered_batch = cluster_items(batch)
-    logger.info("Clustered %d item(s) into %d candidate(s).", len(batch), len(clustered_batch))
-
-    # Stage 4: synthesize (title filter, enrichment, evidence, and critique
-    # happen inside this call, per representative).
-    logger.info("Synthesizing %d candidate(s)...", len(clustered_batch))
-    insights = synthesize_items(clustered_batch)
-    logger.info("%d insight(s) judged significant out of %d candidate(s).", len(insights), len(clustered_batch))
-
-    # Persist dedup state now, for exactly the batch we processed -- not
-    # the full new_items list. If the run were to crash before this point,
-    # nothing gets marked seen and the whole batch retries next run; if it
-    # crashes after, only the un-processed overflow remains for next run.
-    updated_seen = mark_seen(batch, seen, run_ts)
+    # Low-relevance clusters have completed their cheap review and should not
+    # recur forever. Capacity overflow remains unseen for the next cycle.
+    # Selected clusters are deliberately not marked yet: if an API/model stage
+    # fails below, they must retry rather than silently disappear.
+    low_relevance_items = cluster_members(new_items, low_relevance)
+    updated_seen = mark_seen(low_relevance_items, seen, run_ts)
     save_seen(updated_seen)
     logger.info("Dedup state saved (%d total items tracked).", len(updated_seen))
+
+    if not selected:
+        logger.info("No candidates met the profile screening threshold.")
+        return
+
+    # Stage 5: synthesize (title filter, enrichment, evidence, and critique
+    # happen inside this call, per representative).
+    logger.info("Synthesizing %d selected candidate(s)...", len(selected))
+    insights = synthesize_items(selected, profile=profile)
+    logger.info("%d insight(s) judged significant out of %d selected candidate(s).", len(insights), len(selected))
+
+    # Synthesis completed for the selected candidates, so their clusters can
+    # now be marked as seen. This preserves the prior crash-retry behavior.
+    selected_items = cluster_members(new_items, selected)
+    updated_seen = mark_seen(selected_items, updated_seen, run_ts)
+    save_seen(updated_seen)
+    logger.info("Dedup state saved after synthesis (%d total items tracked).", len(updated_seen))
 
     if not insights:
         logger.info("No significant insights this cycle. No posts to publish.")
         return
 
-    # Stage 5: publish gate
+    # Stage 6: publish gate
     to_publish, held_back = select_for_publishing(insights)
     logger.info("%d insight(s) selected for publishing, %d held back.", len(to_publish), len(held_back))
 
@@ -88,7 +123,7 @@ def run():
         logger.info("Nothing cleared the publish gate this cycle.")
         return
 
-    # Stage 6: generate reports
+    # Stage 7: generate reports
     written = generate_reports(to_publish)
     logger.info("=== Pipeline run complete: %d post(s) written ===", len(written))
     for p in written:
