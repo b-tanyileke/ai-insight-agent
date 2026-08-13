@@ -99,6 +99,10 @@ markdown template with Jekyll front matter and a CSS decision card. The card
 summarizes profile fit, business relevance, screening score, critic quality,
 related coverage, and the suggested next move without additional model calls.
 
+The custom home layout (`_layouts/home.html`) shows the growing archive as
+compact post previews and reads the `paginator` object when GitHub Pages
+provides it, rather than relying on Minima's full vertical post list.
+
 ## Troubleshooting map
 
 Start from the symptom, not the file list -- work top to bottom:

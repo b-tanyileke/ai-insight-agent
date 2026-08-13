@@ -8,7 +8,7 @@ publishes citation-grounded write-ups as a Jekyll-ready blog via GitHub Pages.
 
 ## Pipeline stages
 
-```
+```text
 pipeline/collect.py -> pipeline/dedup.py -> pipeline/synthesize.py -> pipeline/publish_gate.py -> pipeline/generate_report.py
 ```
 
@@ -173,3 +173,7 @@ Generated posts include a CSS decision card built entirely from existing
 profile, screening, critic, and recommendation fields. It uses no source
 images or image-generation service, avoiding new runtime cost and image
 licensing concerns.
+
+The homepage uses a custom Minima-compatible layout to present posts as a
+responsive card grid. It uses Jekyll's built-in paginator when available, so
+the archive remains compact as more generated posts are added.
