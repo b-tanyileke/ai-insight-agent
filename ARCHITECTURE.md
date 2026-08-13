@@ -94,9 +94,10 @@ safety >= 4, specificity >= 3, actionability >= 3, and total score >= 14/20.
 Eligible insights are ranked by critic quality and then capped at
 `MAX_POSTS_PER_CYCLE` (default 5). Held items keep a reason.
 
-**11. Rendered post** (`generate_report.py`) -- insight fields mapped onto
-a markdown template with Jekyll front matter, written to
-`_posts/YYYY-MM-DD-slug.md`.
+**11. Rendered post** (`generate_report.py`) -- insight fields mapped onto a
+markdown template with Jekyll front matter and a CSS decision card. The card
+summarizes profile fit, business relevance, screening score, critic quality,
+related coverage, and the suggested next move without additional model calls.
 
 ## Troubleshooting map
 
@@ -109,7 +110,7 @@ Start from the symptom, not the file list -- work top to bottom:
 | Good topics getting skipped | Filter too aggressive, or `MIN_SUMMARY_LENGTH` too high | `title_filter.py` keyword list, `config.py` |
 | Value/cost claims feel made up | Prompt issue, or genuinely thin source data | `synthesize.py`'s `SYSTEM_INSTRUCTION` |
 | Posts structurally shallow | Output schema too narrow or critic feedback is recurring | `synthesize.py` and `critique.py` prompts |
-| Good draft did not publish | It missed a rubric threshold or the cycle cap | `publish_gate.py`, `publication_reason` |
+| Visual card is missing or unstyled | Generated post or theme CSS did not load | `generate_report.py`, `assets/main.scss` |
 | Similar developments became repeat posts | Title matching is too strict | `clustering.py` thresholds |
 | Run takes too long / few posts despite big backlog | Working through backlog, working as intended | `run_pipeline.py`, `MAX_ITEMS_PER_RUN` |
 

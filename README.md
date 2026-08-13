@@ -168,3 +168,8 @@ selected profile's reviewed `screening_terms` and each source's configured
 `business_priority`. It then applies `MAX_ITEMS_PER_RUN` to the best-scoring
 candidates, rather than the first links collected. Set `MIN_SCREENING_SCORE`
 to make this gate stricter or looser; the default is `4`.
+
+Generated posts include a CSS decision card built entirely from existing
+profile, screening, critic, and recommendation fields. It uses no source
+images or image-generation service, avoiding new runtime cost and image
+licensing concerns.

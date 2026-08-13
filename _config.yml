@@ -2,6 +2,8 @@
 title: "AI Capability Digest"
 description: "Weekly-checked insights on how AI tool capabilities can be applied in business practice."
 theme: minima
+sass:
+  style: compressed
 show_excerpts: true
 
 # Pagination -- jekyll-paginate (not -v2) is on GitHub Pages' native
