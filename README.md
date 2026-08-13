@@ -177,3 +177,18 @@ licensing concerns.
 The homepage uses a custom Minima-compatible layout to present posts as a
 responsive card grid. It uses Jekyll's built-in paginator when available, so
 the archive remains compact as more generated posts are added.
+
+## Evaluation and source health
+
+Run the deterministic screening baseline without contacting a source or model:
+
+```
+python -m pipeline.evaluate
+```
+
+The reviewed cases in `data/evaluation/screening_cases.json` protect expected
+selection decisions as profiles and scoring rules change. Every scheduled run
+also logs source-by-source funnel counts and writes a regenerable JSON report
+to `data/processed/source_health_<timestamp>.json`. Use those reports to spot
+sources that are failing, rarely selected, or producing few publishable items
+before expanding the source list.

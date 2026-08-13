@@ -20,6 +20,7 @@ from pipeline.clustering import cluster_items
 from pipeline.config import CLIENT_PROFILE_ID, MAX_ITEMS_PER_RUN, MIN_SCREENING_SCORE
 from pipeline.dedup import load_seen, normalize_url, save_seen, filter_new, mark_seen
 from pipeline.screening import screen_candidates
+from pipeline.source_health import build_source_health, log_source_health, save_source_health
 from pipeline.synthesize import synthesize_items
 from pipeline.publish_gate import select_for_publishing
 from pipeline.generate_report import generate_reports
@@ -40,6 +41,16 @@ def cluster_members(items, representatives):
         if source.get("url")
     }
     return [item for item in items if normalize_url(item.get("url", "")) in member_urls]
+
+
+def report_source_health(all_items, new_items, clustered_items, selected, held, insights, published, run_ts):
+    """Log and save one source funnel report for this run's current outcome."""
+    report = build_source_health(
+        all_items, new_items, clustered_items, selected, held, insights, published
+    )
+    log_source_health(logger, report)
+    report_path = save_source_health(report, run_ts.replace(":", "").replace("+", "_"))
+    logger.info("Wrote source-health report: %s", report_path)
 
 
 def run():
@@ -95,6 +106,7 @@ def run():
     logger.info("Dedup state saved (%d total items tracked).", len(updated_seen))
 
     if not selected:
+        report_source_health(all_items, new_items, clustered_items, selected, held, [], [], run_ts)
         logger.info("No candidates met the profile screening threshold.")
         return
 
@@ -112,6 +124,7 @@ def run():
     logger.info("Dedup state saved after synthesis (%d total items tracked).", len(updated_seen))
 
     if not insights:
+        report_source_health(all_items, new_items, clustered_items, selected, held, insights, [], run_ts)
         logger.info("No significant insights this cycle. No posts to publish.")
         return
 
@@ -120,6 +133,7 @@ def run():
     logger.info("%d insight(s) selected for publishing, %d held back.", len(to_publish), len(held_back))
 
     if not to_publish:
+        report_source_health(all_items, new_items, clustered_items, selected, held, insights, [], run_ts)
         logger.info("Nothing cleared the publish gate this cycle.")
         return
 
@@ -128,6 +142,8 @@ def run():
     logger.info("=== Pipeline run complete: %d post(s) written ===", len(written))
     for p in written:
         logger.info("  - %s", p)
+
+    report_source_health(all_items, new_items, clustered_items, selected, held, insights, to_publish, run_ts)
 
 
 if __name__ == "__main__":
