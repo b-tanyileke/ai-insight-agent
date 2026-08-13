@@ -189,6 +189,11 @@ def synthesize_item(item, profile=None, retry_delay=4):
     # the reviewed profile file and is not copied into a public blog post.
     result["client_profile_id"] = profile["id"]
     result["client_profile_name"] = profile["name"]
+    # Screening is internal audit metadata, not part of the public post body.
+    result["screening"] = {
+        "score": item.get("screening_score"),
+        "reasons": item.get("screening_reasons", []),
+    }
     # Clustering may attach related coverage. It is displayed separately from
     # evidence because this draft was grounded only in the representative.
     result["related_sources"] = item.get("related_sources", [])

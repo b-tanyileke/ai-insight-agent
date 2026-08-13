@@ -62,9 +62,11 @@ def source_record(item):
 
 
 def representative_key(item):
-    """Prefer primary material, then fuller collector summaries, for synthesis."""
+    """Prefer high-priority primary material, then fuller summaries, for synthesis."""
+    priority_rank = {"high": 0, "medium": 1, "low": 2, "signal": 3}
     source_type_rank = {"github_releases": 0, "rss": 1, "arxiv": 2, "hn": 3}
     return (
+        priority_rank.get(item.get("business_priority"), 1),
         source_type_rank.get(item.get("source_type"), 99),
         -len(item.get("summary", "") or ""),
         item.get("title", "").lower(),

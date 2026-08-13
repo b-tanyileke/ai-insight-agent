@@ -14,7 +14,8 @@
     "target_functions",
     "approved_vendors",
     "data_sensitivity",
-    "regulatory_considerations"
+    "regulatory_considerations",
+    "screening_terms"
   ],
   "properties": {
     "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
@@ -27,7 +28,8 @@
     "target_functions": {"$ref": "#/$defs/stringList"},
     "approved_vendors": {"$ref": "#/$defs/stringList"},
     "data_sensitivity": {"$ref": "#/$defs/stringList"},
-    "regulatory_considerations": {"$ref": "#/$defs/stringList"}
+    "regulatory_considerations": {"$ref": "#/$defs/stringList"},
+    "screening_terms": {"$ref": "#/$defs/stringList"}
   },
   "$defs": {
     "stringList": {

@@ -24,24 +24,28 @@ SOURCES = [
         "name": "Anthropic News (unofficial mirror)",
         "type": "rss",
         "provider": "claude",
+        "business_priority": "high",
         "url": "https://raw.githubusercontent.com/taobojlen/anthropic-rss-feed/main/anthropic_news_rss.xml",
     },
     {
         "name": "OpenAI News",
         "type": "rss",
         "provider": "openai",
+        "business_priority": "high",
         "url": "https://openai.com/news/rss.xml",
     },
     {
         "name": "Hugging Face Blog",
         "type": "rss",
         "provider": "other",
+        "business_priority": "medium",
         "url": "https://huggingface.co/blog/feed.xml",
     },
     {
         "name": "Berkeley AI Research (BAIR)",
         "type": "rss",
         "provider": "other",
+        "business_priority": "low",
         "url": "https://bair.berkeley.edu/blog/feed.xml",
     },
 
@@ -51,12 +55,14 @@ SOURCES = [
         "name": "Ollama releases",
         "type": "github_releases",
         "provider": "ollama",
+        "business_priority": "medium",
         "repo": "ollama/ollama",
     },
     {
         "name": "llama.cpp releases",
         "type": "github_releases",
         "provider": "other",
+        "business_priority": "medium",
         "repo": "ggml-org/llama.cpp",
     },
 
@@ -65,6 +71,7 @@ SOURCES = [
         "name": "arXiv cs.AI recent",
         "type": "arxiv",
         "provider": "other",
+        "business_priority": "low",
         "query": "cat:cs.AI",
         "max_results": 15,
     },
@@ -75,6 +82,7 @@ SOURCES = [
         "name": "Hacker News AI discussions",
         "type": "hn",
         "provider": "other",
+        "business_priority": "signal",
         "query": "AI OR LLM OR Claude OR GPT OR Gemini",
     },
 ]
@@ -135,6 +143,10 @@ TITLE_FILTER_METHOD = os.environ.get("TITLE_FILTER_METHOD", "keyword")
 # taking hours or never finishing at all. Unprocessed overflow items are
 # NOT marked as seen, so they're picked up again next run.
 MAX_ITEMS_PER_RUN = int(os.environ.get("MAX_ITEMS_PER_RUN", "10"))
+
+# Screening happens before this cap. A higher number permits more expensive
+# evidence/writer/critic work; a lower number reduces cost after ranking.
+MIN_SCREENING_SCORE = int(os.environ.get("MIN_SCREENING_SCORE", "4"))
 
 # Even among insights that clear all gates, only publish this many per
 # cycle, ranked by confidence (see publish_gate.py). Keeps output volume

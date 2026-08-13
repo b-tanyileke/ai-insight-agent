@@ -162,3 +162,9 @@ The pipeline now uses the selected profile to tailor its writer and critic
 prompts. `consulting-firm` is the default; set `CLIENT_PROFILE_ID=b2b-saas`
 to run for the B2B SaaS example. Posts retain only the selected profile's ID
 and name, not its full business context.
+
+Before model calls, the pipeline scores all clustered candidates using the
+selected profile's reviewed `screening_terms` and each source's configured
+`business_priority`. It then applies `MAX_ITEMS_PER_RUN` to the best-scoring
+candidates, rather than the first links collected. Set `MIN_SCREENING_SCORE`
+to make this gate stricter or looser; the default is `4`.

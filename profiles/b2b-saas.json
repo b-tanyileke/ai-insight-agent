@@ -32,5 +32,20 @@
     "Customer data-processing agreements",
     "SOC 2 controls",
     "GDPR obligations"
+  ],
+  "screening_terms": [
+    "product management",
+    "product feature",
+    "api",
+    "software engineering",
+    "developer",
+    "coding",
+    "customer support",
+    "customer success",
+    "usage analytics",
+    "spend controls",
+    "security",
+    "cloud",
+    "privacy"
   ]
 }
