@@ -90,8 +90,8 @@ SOURCES = [
 # Rough target weighting for the synthesis stage later -- not enforced
 # at collection time, just documented here for reference.
 PROVIDER_WEIGHT_TARGET = {
-    "claude": 0.40,
-    "other": 0.60,  # openai, google, meta, ollama, open-source, etc.
+    "claude": 0.30,
+    "other": 0.70,  # openai, google, meta, ollama, open-source, etc.
 }
 
 # --- Synthesis stage config ---
@@ -142,7 +142,7 @@ TITLE_FILTER_METHOD = os.environ.get("TITLE_FILTER_METHOD", "keyword")
 # scheduled runs instead of one run trying to do everything and either
 # taking hours or never finishing at all. Unprocessed overflow items are
 # NOT marked as seen, so they're picked up again next run.
-MAX_ITEMS_PER_RUN = int(os.environ.get("MAX_ITEMS_PER_RUN", "10"))
+MAX_ITEMS_PER_RUN = int(os.environ.get("MAX_ITEMS_PER_RUN", "6"))
 
 # Screening happens before this cap. A higher number permits more expensive
 # evidence/writer/critic work; a lower number reduces cost after ranking.
@@ -151,4 +151,4 @@ MIN_SCREENING_SCORE = int(os.environ.get("MIN_SCREENING_SCORE", "4"))
 # Even among insights that clear all gates, only publish this many per
 # cycle, ranked by confidence (see publish_gate.py). Keeps output volume
 # manageable and avoids burning through quota publishing everything at once.
-MAX_POSTS_PER_CYCLE = int(os.environ.get("MAX_POSTS_PER_CYCLE", "5"))
+MAX_POSTS_PER_CYCLE = int(os.environ.get("MAX_POSTS_PER_CYCLE", "3"))

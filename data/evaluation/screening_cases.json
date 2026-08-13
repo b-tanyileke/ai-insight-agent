@@ -1,0 +1,42 @@
+[
+  {
+    "id": "consulting-proposal-tool",
+    "profile_id": "consulting-firm",
+    "item": {
+      "title": "New proposal workflow tool for consulting teams",
+      "summary": "Improves account-team productivity and client delivery.",
+      "business_priority": "high"
+    },
+    "expected_selected": true
+  },
+  {
+    "id": "consulting-general-research",
+    "profile_id": "consulting-firm",
+    "item": {
+      "title": "A benchmark for reasoning models",
+      "summary": "General research findings.",
+      "business_priority": "low"
+    },
+    "expected_selected": false
+  },
+  {
+    "id": "saas-support-analytics",
+    "profile_id": "b2b-saas",
+    "item": {
+      "title": "Customer support usage analytics and spend controls",
+      "summary": "New API controls for engineering teams.",
+      "business_priority": "high"
+    },
+    "expected_selected": true
+  },
+  {
+    "id": "saas-community-signal",
+    "profile_id": "b2b-saas",
+    "item": {
+      "title": "Developer discussion about a new API",
+      "summary": "Community comments.",
+      "business_priority": "signal"
+    },
+    "expected_selected": false
+  }
+]

@@ -103,6 +103,11 @@ The custom home layout (`_layouts/home.html`) shows the growing archive as
 compact post previews and reads the `paginator` object when GitHub Pages
 provides it, rather than relying on Minima's full vertical post list.
 
+**12. Evaluation and source health** (`evaluate.py`, `source_health.py`) --
+the fixture evaluation checks expected deterministic screening decisions with
+no external calls. Each scheduled run also logs and saves a per-source funnel
+of collected, selected, low-relevance, overflow, insight, and published counts.
+
 ## Troubleshooting map
 
 Start from the symptom, not the file list -- work top to bottom:
@@ -117,6 +122,7 @@ Start from the symptom, not the file list -- work top to bottom:
 | Visual card is missing or unstyled | Generated post or theme CSS did not load | `generate_report.py`, `assets/main.scss` |
 | Similar developments became repeat posts | Title matching is too strict | `clustering.py` thresholds |
 | Run takes too long / few posts despite big backlog | Working through backlog, working as intended | `run_pipeline.py`, `MAX_ITEMS_PER_RUN` |
+| A source appears weak or silent | It may fail collection, screening, or later gates | `data/processed/source_health_*.json` |
 
 ## Suggested file reading order
 
