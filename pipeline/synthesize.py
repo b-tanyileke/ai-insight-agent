@@ -14,7 +14,8 @@ import json
 import logging
 import time
 
-from pipeline.config import DATA_DIR
+from pipeline.client_profiles import load_profile
+from pipeline.config import CLIENT_PROFILE_ID, DATA_DIR
 from pipeline.critique import critique_insight
 from pipeline.evidence import extract_evidence
 from pipeline.llm_client import call_gemini_raw, parse_json_response
@@ -52,8 +53,24 @@ or you don't have enough information to say anything substantive), set "signific
 and keep the other fields short/empty -- do not pad them out with speculation."""
 
 
-def build_user_prompt(item, evidence):
-    """Build a business-analysis prompt using only pre-validated evidence."""
+def format_profile_context(profile):
+    """Format reviewed client context without adding facts beyond the profile."""
+    return (
+        f"Client profile: {profile['name']} ({profile['id']})\n"
+        f"Business type: {profile['business_type']}\n"
+        f"Industry: {profile['industry']}\n"
+        f"Geography: {profile['geography']}\n"
+        f"AI maturity: {profile['ai_maturity']}\n"
+        f"Strategic priorities: {'; '.join(profile['strategic_priorities'])}\n"
+        f"Target functions: {'; '.join(profile['target_functions'])}\n"
+        f"Approved vendors: {'; '.join(profile['approved_vendors'])}\n"
+        f"Data sensitivity: {'; '.join(profile['data_sensitivity'])}\n"
+        f"Regulatory considerations: {'; '.join(profile['regulatory_considerations'])}"
+    )
+
+
+def build_user_prompt(item, evidence, profile):
+    """Build a business-analysis prompt using evidence and reviewed client context."""
     claims = "\n".join(
         f"- Claim: {claim['claim']}\n  Supporting excerpt: {claim['excerpt']}"
         for claim in evidence["claims"]
@@ -66,6 +83,10 @@ def build_user_prompt(item, evidence):
         f"URL: {item.get('url', '')}\n"
         f"Evidence summary: {evidence.get('summary', '')}\n"
         f"Verified claims:\n{claims}"
+        f"\n\nClient context:\n{format_profile_context(profile)}\n\n"
+        "Tailor the business use case and implementation to this profile. If the "
+        "development does not fit its priorities, functions, vendor constraints, "
+        "or risk context, set significant to false."
     )
 
 
@@ -74,9 +95,9 @@ def call_gemini(user_prompt):
     return parse_json_response(text)
 
 
-def build_revision_prompt(item, evidence, draft, feedback):
+def build_revision_prompt(item, evidence, profile, draft, feedback):
     """Ask the existing insight writer for one evidence-bound revision."""
-    prompt = build_user_prompt(item, evidence)
+    prompt = build_user_prompt(item, evidence, profile)
     prior_draft = json.dumps(draft, ensure_ascii=False)
     return (
         f"{prompt}\n\nOriginal draft:\n{prior_draft}\n\n"
@@ -85,8 +106,9 @@ def build_revision_prompt(item, evidence, draft, feedback):
     )
 
 
-def synthesize_item(item, retry_delay=4):
+def synthesize_item(item, profile=None, retry_delay=4):
     """Synthesize one item into an insight dict, or return None if skipped/failed."""
+    profile = profile or load_profile(CLIENT_PROFILE_ID)
     title_ok, title_reason = passes_title_filter(item)
     if not title_ok:
         logger.info("Skipping (title filter) [%s]: %s", title_reason, item.get("title", "")[:60])
@@ -104,7 +126,7 @@ def synthesize_item(item, retry_delay=4):
     if not evidence:
         return None
 
-    prompt = build_user_prompt(item, evidence)
+    prompt = build_user_prompt(item, evidence, profile)
     try:
         result = call_gemini(prompt)
     except requests.exceptions.HTTPError as e:
@@ -130,13 +152,13 @@ def synthesize_item(item, retry_delay=4):
     # The critic has no publishing authority, but a rejected or malformed
     # review blocks this draft before it reaches the existing publish gate.
     try:
-        critique = critique_insight(result, evidence)
+        critique = critique_insight(result, evidence, profile)
         if critique and critique["decision"] == "revise":
-            revised = call_gemini(build_revision_prompt(item, evidence, result, critique["feedback"]))
+            revised = call_gemini(build_revision_prompt(item, evidence, profile, result, critique["feedback"]))
             if not revised.get("significant"):
                 logger.info("Revision no longer significant: %s", item.get("title", "")[:60])
                 return None
-            final_critique = critique_insight(revised, evidence)
+            final_critique = critique_insight(revised, evidence, profile)
             if not final_critique or final_critique["decision"] != "approve":
                 logger.info("Revision not approved: %s", item.get("title", "")[:60])
                 return None
@@ -163,6 +185,10 @@ def synthesize_item(item, retry_delay=4):
     result["content_enriched"] = evidence["content_enriched"]
     result["evidence"] = evidence
     result["critique"] = critique
+    # Store only display-safe profile identity; the detailed context remains in
+    # the reviewed profile file and is not copied into a public blog post.
+    result["client_profile_id"] = profile["id"]
+    result["client_profile_name"] = profile["name"]
     # Clustering may attach related coverage. It is displayed separately from
     # evidence because this draft was grounded only in the representative.
     result["related_sources"] = item.get("related_sources", [])
@@ -171,13 +197,14 @@ def synthesize_item(item, retry_delay=4):
     return result
 
 
-def synthesize_items(items, delay_between_calls=4):
+def synthesize_items(items, delay_between_calls=4, profile=None):
     """Synthesize a list of new items. Sleeps between calls to stay safely
     under Gemini free-tier RPM limits (~15/min as of mid-2026 -- check
     aistudio.google.com for your key's current limit)."""
+    profile = profile or load_profile(CLIENT_PROFILE_ID)
     insights = []
     for i, item in enumerate(items):
-        insight = synthesize_item(item)
+        insight = synthesize_item(item, profile=profile)
         if insight:
             insights.append(insight)
         if i < len(items) - 1:

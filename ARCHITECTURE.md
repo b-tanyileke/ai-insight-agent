@@ -64,7 +64,8 @@ unless every excerpt appears in the retrieved source text. It also attaches a
 transparent source-quality label based on source type.
 
 **7. Synthesized insight** (`synthesize.py` + `llm_client.py`) -- the core
-business interpretation. It receives only validated evidence, then returns:
+business interpretation. It receives only validated evidence plus the selected
+reviewed client profile, then returns:
 
 ```json
 {"significant": true, "confidence": "confirmed|early-signal|speculative",
@@ -77,8 +78,9 @@ Immediately after, the REAL `source_url`, `source_name`, `provider`, and
 own citation claims are never trusted directly.
 
 **8. Critic review** (`critique.py`) -- scores the draft for evidence grounding,
-specificity, actionability, and safe value claims. A draft may receive one
-evidence-bound revision; anything not approved after that is held back.
+specificity, actionability, safe value claims, and fit with the same client
+profile. A draft may receive one evidence-bound revision; anything not
+approved after that is held back.
 
 **9. Publish-gated** (`publish_gate.py`) -- applies an explicit, code-based
 rubric to the final critic result: approval, grounding >= 4, value-claim
@@ -130,3 +132,4 @@ once you know what feeds it.
 - `MIN_SUMMARY_LENGTH` -- threshold for triggering enrichment
 - `TITLE_FILTER_METHOD` -- `keyword` | `llm` | `none`
 - `GEMINI_MODEL` -- overridable without code changes, e.g. for quota management
+- `CLIENT_PROFILE_ID` -- selected reviewed profile; `consulting-firm` by default

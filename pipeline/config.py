@@ -101,6 +101,10 @@ DATA_DIR = BASE_DIR / "data"
 POSTS_DIR = BASE_DIR / "_posts"
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
+# Selects the reviewed business context for a run. Override per scheduled
+# deployment or manual run, for example: CLIENT_PROFILE_ID=b2b-saas.
+CLIENT_PROFILE_ID = os.environ.get("CLIENT_PROFILE_ID", "consulting-firm")
+
 # "gemini-flash-latest" is an alias Google keeps pointed at their current
 # recommended free-tier-eligible Flash model. Override with an env var if
 # you want a specific model (e.g. during testing, to conserve quota):
