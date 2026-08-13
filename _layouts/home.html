@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <header class="digest-hero">
+      <p class="digest-hero__eyebrow">Weekly AI business intelligence</p>
+      <h1 class="page-heading">{{ page.title | escape }}</h1>
+      <div class="digest-hero__intro">{{ content }}</div>
+    </header>
+  {%- else -%}
+    {{ content }}
+  {%- endif -%}
+
+  {%- assign posts = paginator.posts | default: site.posts -%}
+  {%- if posts.size > 0 -%}
+    <section class="digest-list" aria-labelledby="latest-insights">
+      <div class="digest-list__heading">
+        <div>
+          <p class="digest-list__eyebrow">Curated for action</p>
+          <h2 id="latest-insights">Latest insights</h2>
+        </div>
+        {%- if paginator -%}
+          <p class="digest-list__count">Page {{ paginator.page }} of {{ paginator.total_pages }}</p>
+        {%- endif -%}
+      </div>
+
+      <div class="insight-grid">
+        {%- for post in posts -%}
+          <article class="insight-preview">
+            <div class="insight-preview__meta">
+              <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+              {%- if post.tool -%}<span>{{ post.tool | escape }}</span>{%- endif -%}
+            </div>
+            <h3 class="insight-preview__title">
+              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h3>
+            {%- if post.client_profile -%}
+              <p class="insight-preview__profile">For {{ post.client_profile | replace: "-", " " | escape }}</p>
+            {%- endif -%}
+            {%- if site.show_excerpts -%}
+              <div class="insight-preview__excerpt">{{ post.excerpt }}</div>
+            {%- endif -%}
+            <a class="insight-preview__link" href="{{ post.url | relative_url }}" aria-label="Read insight: {{ post.title | escape }}">Read insight <span aria-hidden="true">→</span></a>
+          </article>
+        {%- endfor -%}
+      </div>
+    </section>
+  {%- endif -%}
+
+  {%- if paginator and paginator.total_pages > 1 -%}
+    <nav class="digest-pagination" aria-label="Insight pages">
+      {%- if paginator.previous_page -%}
+        <a href="{{ paginator.previous_page_path | relative_url }}">← Newer insights</a>
+      {%- else -%}
+        <span></span>
+      {%- endif -%}
+      <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {%- if paginator.next_page -%}
+        <a href="{{ paginator.next_page_path | relative_url }}">Older insights →</a>
+      {%- else -%}
+        <span></span>
+      {%- endif -%}
+    </nav>
+  {%- endif -%}
+</div>
