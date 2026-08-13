@@ -49,6 +49,19 @@ def render_post(insight, post_date=None):
         f" -- published {insight.get('published', 'date unknown')}\n"
     )
 
+    related_sources = insight.get("related_sources", [])
+    # Related coverage is not used as evidence for this post's claims yet;
+    # label it clearly so readers can distinguish it from the primary source.
+    if len(related_sources) > 1:
+        body += "\n## Related coverage\n"
+        for source in related_sources:
+            if source.get("url") == insight.get("source_url"):
+                continue
+            body += (
+                f"- [{source.get('source_name', 'source')}]({source.get('url', '')})"
+                f" -- {source.get('title', 'untitled')}\n"
+            )
+
     return front_matter + body
 
 

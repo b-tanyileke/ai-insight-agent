@@ -1,5 +1,5 @@
 """
-Orchestrates the full pipeline: collect -> dedup -> synthesize ->
+Orchestrates the full pipeline: collect -> dedup -> cluster -> synthesize ->
 publish_gate -> generate_report. This is the single entry point the
 GitHub Actions cron job calls.
 
@@ -15,6 +15,7 @@ import sys
 from datetime import datetime, timezone
 
 from pipeline.collect import run_collection
+from pipeline.clustering import cluster_items
 from pipeline.config import MAX_ITEMS_PER_RUN
 from pipeline.dedup import load_seen, save_seen, filter_new, mark_seen
 from pipeline.synthesize import synthesize_items
@@ -56,11 +57,16 @@ def run():
             len(new_items), len(batch), MAX_ITEMS_PER_RUN, overflow,
         )
 
-    # Stage 3: synthesize (title filter + enrichment + sufficiency gate all
-    # happen inside this call, per-item)
-    logger.info("Synthesizing %d item(s)...", len(batch))
-    insights = synthesize_items(batch)
-    logger.info("%d insight(s) judged significant out of %d processed.", len(insights), len(batch))
+    # Stage 3: cluster only obvious duplicates before any model calls. We
+    # still mark every batch item as seen below, including clustered members.
+    clustered_batch = cluster_items(batch)
+    logger.info("Clustered %d item(s) into %d candidate(s).", len(batch), len(clustered_batch))
+
+    # Stage 4: synthesize (title filter, enrichment, evidence, and critique
+    # happen inside this call, per representative).
+    logger.info("Synthesizing %d candidate(s)...", len(clustered_batch))
+    insights = synthesize_items(clustered_batch)
+    logger.info("%d insight(s) judged significant out of %d candidate(s).", len(insights), len(clustered_batch))
 
     # Persist dedup state now, for exactly the batch we processed -- not
     # the full new_items list. If the run were to crash before this point,
@@ -74,7 +80,7 @@ def run():
         logger.info("No significant insights this cycle. No posts to publish.")
         return
 
-    # Stage 4: publish gate
+    # Stage 5: publish gate
     to_publish, held_back = select_for_publishing(insights)
     logger.info("%d insight(s) selected for publishing, %d held back.", len(to_publish), len(held_back))
 
@@ -82,7 +88,7 @@ def run():
         logger.info("Nothing cleared the publish gate this cycle.")
         return
 
-    # Stage 5: generate reports
+    # Stage 6: generate reports
     written = generate_reports(to_publish)
     logger.info("=== Pipeline run complete: %d post(s) written ===", len(written))
     for p in written:

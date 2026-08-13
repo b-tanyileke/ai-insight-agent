@@ -121,6 +121,9 @@ ai-insight-agent/
 - The publish gate then applies transparent code thresholds to final critic
   scores, ranks eligible insights by quality, caps the weekly volume, and
   records why any insight was held back.
+- Conservative source clustering groups identical URLs and near-identical
+  substantive headlines before synthesis. The post retains other cluster links
+  as related coverage without treating them as evidence for its claims.
 - Title filter (title_filter.py) runs BEFORE enrichment/synthesis so
   irrelevant items (funding, hiring, legal news) never cost a network
   fetch or an LLM call.
