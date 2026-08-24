@@ -10448,5 +10448,235 @@
     "title": "SheetCompass: Hierarchical Relation Graphs for Agentic Spreadsheet Reasoning",
     "source": "arXiv cs.AI recent",
     "first_seen": "2026-08-17T09:32:51.338705+00:00"
+  },
+  "https://openai.com/index/introducing-ai-futures": {
+    "title": "Introducing AI Futures",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/stampli": {
+    "title": "Stampli cuts launch hours by 68% using ChatGPT Work",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/offering-zero-data-retention-for-frontier-models": {
+    "title": "Offering Zero Data Retention for frontier models",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/replit": {
+    "title": "Replit expands access to software creation with GPT-5.6 Luna",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/chatgpt-ads-expands-across-europe": {
+    "title": "ChatGPT Ads expands across Europe",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/strengthening-democratic-oversight-in-national-security": {
+    "title": "Strengthening democratic oversight in national security",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/partnering-with-codeai": {
+    "title": "Partnering with CodeAI to prepare the first AI generation",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/pacing-model-development-cyber-capabilities": {
+    "title": "Pacing model development in an era of cyber-critical capabilities",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/chatgpt-for-teens": {
+    "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/nvidia/chatgpt-work": {
+    "title": "How NVIDIA scales expertise with ChatGPT Work",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/asana": {
+    "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/the-defenders-window": {
+    "title": "The Defender’s Window",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/openai-joins-ports-pike-project": {
+    "title": "OpenAI joins PORTS-Pike project",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://openai.com/index/new-policy-ideas-for-the-intelligence-age": {
+    "title": "New policy ideas for the Intelligence Age",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://huggingface.co/blog/asr-benchmark-optimization": {
+    "title": "Measuring benchmark optimization in speech recognition",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://huggingface.co/blog/LiquidAI/lfm25-dspark": {
+    "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://huggingface.co/blog/ibm-research/altk-evolve-hmm": {
+    "title": "How Much Memory Does Your Agent Actually Need?",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://huggingface.co/blog/multi-vector-encoder": {
+    "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2": {
+    "title": "Same Cluster, 33 Points More Utilization: What Changed Was the Order",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.33.0-rc2": {
+    "title": "ollama/ollama v0.33.0-rc2: v0.33.0",
+    "source": "Ollama releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.32.15": {
+    "title": "ollama/ollama v0.32.15: v0.32.15",
+    "source": "Ollama releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10605": {
+    "title": "ggml-org/llama.cpp b10605: b10605",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10604": {
+    "title": "ggml-org/llama.cpp b10604: b10604",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10603": {
+    "title": "ggml-org/llama.cpp b10603: b10603",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10599": {
+    "title": "ggml-org/llama.cpp b10599: b10599",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10598": {
+    "title": "ggml-org/llama.cpp b10598: b10598",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10595": {
+    "title": "ggml-org/llama.cpp b10595: b10595",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10594": {
+    "title": "ggml-org/llama.cpp b10594: b10594",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10593": {
+    "title": "ggml-org/llama.cpp b10593: b10593",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10590": {
+    "title": "ggml-org/llama.cpp b10590: b10590",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10589": {
+    "title": "ggml-org/llama.cpp b10589: b10589",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21359v1": {
+    "title": "Primal Acceleration of Newton's Method",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21357v1": {
+    "title": "VIALS: A Benchmark for Visual Interpretation of Artifacts in the Life Sciences",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21356v1": {
+    "title": "AI with Authority, from Application to Silicon",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21343v1": {
+    "title": "TurboBias 2.0: Streaming Context-Biasing for Production-Efficient ASR Systems",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21332v1": {
+    "title": "Anatomy-Informed Neural Networks: Encoding Anatomic Priors in Loss and Architecture, with an SE(3) Formulation of Guidewire-Induced Aortoiliac Deformation",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21319v1": {
+    "title": "Unified Branch-and-Bound Search for the Steiner Traveling Salesman Problem on Graphs of Convex Sets",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21317v1": {
+    "title": "From Regulation to Implementation: A Critical Evaluation of LLM-Assisted Regulatory Compliance in Industry",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21305v1": {
+    "title": "Re$^3$Cap: Retrieval-Guided Refinement for Image Captioning Enhancement via Reinforcement Learning",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21292v1": {
+    "title": "AUSO: Action-Level Unified Skill Optimization from Internalization to Utilization",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21278v1": {
+    "title": "CLEAR: Continuous Latent Adapter Routing for Utility-Preserving LLM Safety Alignment",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21252v1": {
+    "title": "EnSI-RAG: Entity-Structure-Indexed Retrieval-Augmented Generation for Long-Document Question Answering",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21243v1": {
+    "title": "Adapting Knowledge Graphs for Behavior Denoising in Sequential Recommendation",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21233v1": {
+    "title": "Fine-Grain GPU Parallelization of the Generalized Partition Crossover for Large-Scale Traveling Salesman Problems",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21230v1": {
+    "title": "Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "http://arxiv.org/abs/2608.21224v1": {
+    "title": "Ontology-supported AI Model and Dataset Management",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-24T09:38:10.612041+00:00"
   }
 }
