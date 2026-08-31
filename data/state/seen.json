@@ -10678,5 +10678,265 @@
     "title": "Ontology-supported AI Model and Dataset Management",
     "source": "arXiv cs.AI recent",
     "first_seen": "2026-08-24T09:38:10.612041+00:00"
+  },
+  "https://www.anthropic.com/news/wellbeing-research-grants": {
+    "title": "Funding better evaluations of AI’s impact on wellbeing",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://www.anthropic.com/news/expanding-support-for-scientists": {
+    "title": "Expanding our support for scientists",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://www.anthropic.com/news/model-hardware-standard-research-preview": {
+    "title": "Previewing the Model Hardware Standard",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads": {
+    "title": "A milestone in expanding access to AI",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex": {
+    "title": "Our decision on Cursor following its acquisition by SpaceX",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/supporting-next-generation-ai-startups-thailand": {
+    "title": "Supporting Thailand’s next generation of AI startups",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training": {
+    "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/expanding-our-presence-in-brazil": {
+    "title": "Expanding OpenAI’s presence in Brazil",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/learning-never-stops": {
+    "title": "Learning never stops: How AI makes learning continuous",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts": {
+    "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/hugging-face-incident-and-the-road-ahead": {
+    "title": "The Hugging Face incident and the road ahead",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/loveholidays": {
+    "title": "How loveholidays is making everyone a builder with Codex",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/the-full-stack-behind-abundant-intelligence": {
+    "title": "The full stack behind abundant intelligence",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/jalapeno-first-results": {
+    "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia": {
+    "title": "Disrupting a new covert influence campaign from Russia",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/introducing-admin-plugin": {
+    "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/gpt-5-6-in-kiro": {
+    "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://openai.com/index/introducing-intelligence-age": {
+    "title": "Introducing Intelligence Age",
+    "source": "OpenAI News",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://huggingface.co/blog/open-asr-leaderboard-global-south": {
+    "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://huggingface.co/blog/train-multi-vector-encoder": {
+    "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://huggingface.co/blog/ibm-granite/granite-4-2": {
+    "title": "Granite 4.2 LLMs: How They're Built",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing": {
+    "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://huggingface.co/blog/gradio-workflow-guide": {
+    "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://huggingface.co/blog/pwc-search": {
+    "title": "How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.33.2": {
+    "title": "ollama/ollama v0.33.2: v0.33.2",
+    "source": "Ollama releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.33.1": {
+    "title": "ollama/ollama v0.33.1: v0.33.1",
+    "source": "Ollama releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.33.0": {
+    "title": "ollama/ollama v0.33.0: v0.33.0",
+    "source": "Ollama releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10723": {
+    "title": "ggml-org/llama.cpp b10723: b10723",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10721": {
+    "title": "ggml-org/llama.cpp b10721: b10721",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10720": {
+    "title": "ggml-org/llama.cpp b10720: b10720",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10719": {
+    "title": "ggml-org/llama.cpp b10719: b10719",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10718": {
+    "title": "ggml-org/llama.cpp b10718: b10718",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10717": {
+    "title": "ggml-org/llama.cpp b10717: b10717",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10715": {
+    "title": "ggml-org/llama.cpp b10715: b10715",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10714": {
+    "title": "ggml-org/llama.cpp b10714: b10714",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10713": {
+    "title": "ggml-org/llama.cpp b10713: b10713",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10712": {
+    "title": "ggml-org/llama.cpp b10712: b10712",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28578v1": {
+    "title": "Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28576v1": {
+    "title": "Learning a Size-Weight Frontier for Synthetic-Augmented Inference",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28557v1": {
+    "title": "Blog: Survey of Optimizers",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28553v1": {
+    "title": "Logos: An Agent Harness on a Cross-Process Bus",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28549v1": {
+    "title": "Video Generative Models as Geometry Learner",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28541v1": {
+    "title": "An Enclosed Mode Is a Gauge Choice: Topology Relative to Reach in Certified Code World Models",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28534v1": {
+    "title": "InstructMesh: Selective Refinement of Generative 3D Models for Fabrication",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28524v1": {
+    "title": "Texture Image Classification Using DWT AlexNet Feature Fusion and Deep Neural Networks",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28518v1": {
+    "title": "When Robots Mishear Us: Mapping the Safety Risks of Voice-Controlled Embodied AI",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28515v1": {
+    "title": "Conformal Uncertainty Quantification Guarantees for Neural Operators",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28511v1": {
+    "title": "Training Communication-Efficient Mixture-of-Experts Language Models with Layer Re-Configuration",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28497v1": {
+    "title": "On the Maintenance and Co-evolution of Agent Plugins: An Empirical Study of Claude Code Plugin Marketplaces",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28491v1": {
+    "title": "AcrossVAM1.0: Particle World Modeling for Text-Assisted Robot Video Prediction",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28490v1": {
+    "title": "LLM-Based Agents for Software and Systems Security: Approaches, Applications, and Assessment",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "http://arxiv.org/abs/2608.28482v1": {
+    "title": "How Proper Scoring Rules Shape LLM Forecasting",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-08-31T16:34:32.306738+00:00"
   }
 }
