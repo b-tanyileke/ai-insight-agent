@@ -10938,5 +10938,270 @@
     "title": "How Proper Scoring Rules Shape LLM Forecasting",
     "source": "arXiv cs.AI recent",
     "first_seen": "2026-08-31T16:34:32.306738+00:00"
+  },
+  "https://www.anthropic.com/news/improving-alignment-security-efforts": {
+    "title": "Improving our alignment and security efforts",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://www.anthropic.com/news/enterprise-frontier-safeguards": {
+    "title": "Developing Enterprise Frontier Safeguards with our customers",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://www.anthropic.com/claude-fable-and-mythos-5-1": {
+    "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/supporting-independent-journalism-in-ukraine": {
+    "title": "Supporting independent journalism in Ukraine",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/an-alien-mind": {
+    "title": "An Alien Mind",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/research-acceleration-view-inside-openai": {
+    "title": "Research acceleration: The view inside OpenAI",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/daybreak-for-frontline-defenders": {
+    "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/legora-financial-statement-review-with-astra": {
+    "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/playco-game-prototyping-with-astra": {
+    "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/gpt-6-astra": {
+    "title": "GPT-6 Astra: A new generation of intelligence",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/safety-overview-gpt-6-astra": {
+    "title": "Safety overview: GPT-6 Astra",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/atv-big-air-tour": {
+    "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/ai-native-company-workflows": {
+    "title": "How AI-native companies turn workflows into operating capability",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/path-to-astra": {
+    "title": "Path to Astra: critical capabilities and frontier safeguards",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources": {
+    "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/gilbert-tobin": {
+    "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety": {
+    "title": "OpenAI supports California’s bill to advance youth AI safety",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/polimill": {
+    "title": "Polimill builds Japan's next-generation public AI infrastructure",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://openai.com/index/gpt-4": {
+    "title": "GPT-4",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://huggingface.co/blog/Hcompany/neomme": {
+    "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://huggingface.co/blog/grpo-with-trl-ifstruct": {
+    "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://huggingface.co/blog/funes": {
+    "title": "Give Your Coding Agents a Memory You Own",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://huggingface.co/blog/train-to-paint-with-code": {
+    "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://huggingface.co/blog/ibm-research/real-time-intelligence": {
+    "title": "Real-Time Intelligence with IBM Time Series Models on Confluent",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://huggingface.co/blog/allenai/benchmirt": {
+    "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://huggingface.co/blog/webgpu-kernels": {
+    "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.34.0-rc1": {
+    "title": "ollama/ollama v0.34.0-rc1: v0.34.0",
+    "source": "Ollama releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.33.3": {
+    "title": "ollama/ollama v0.33.3: v0.33.3",
+    "source": "Ollama releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10840": {
+    "title": "ggml-org/llama.cpp b10840: b10840",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10839": {
+    "title": "ggml-org/llama.cpp b10839: b10839",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10837": {
+    "title": "ggml-org/llama.cpp b10837: b10837",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10835": {
+    "title": "ggml-org/llama.cpp b10835: b10835",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10834": {
+    "title": "ggml-org/llama.cpp b10834: b10834",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10833": {
+    "title": "ggml-org/llama.cpp b10833: b10833",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10831": {
+    "title": "ggml-org/llama.cpp b10831: b10831",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10830": {
+    "title": "ggml-org/llama.cpp b10830: b10830",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10829": {
+    "title": "ggml-org/llama.cpp b10829: b10829",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10828": {
+    "title": "ggml-org/llama.cpp b10828: b10828",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05404v1": {
+    "title": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05403v1": {
+    "title": "RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05396v1": {
+    "title": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05395v1": {
+    "title": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05385v1": {
+    "title": "Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05382v1": {
+    "title": "Reflection-aware Generative Novel View Synthesis",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05381v1": {
+    "title": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05376v1": {
+    "title": "What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05374v1": {
+    "title": "CUA-Universe: A Scalable and Dynamic Environment for Hybrid GUI+CLI Agents",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05370v1": {
+    "title": "When LLM Decompilers Recompile More and Preserve Less",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05364v1": {
+    "title": "Design Docs Are All You Need: An AI-native Machine-Learning Performance Tool",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05346v1": {
+    "title": "Who Should Grade My Work? Student Perspectives on Transparent AI-Assisted Writing Assessment in Higher Education",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05339v1": {
+    "title": "Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05335v1": {
+    "title": "The History Is the Detector: Executing CVE Patch History, End-to-End",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "http://arxiv.org/abs/2609.05334v1": {
+    "title": "Lightweight Vision Transformer Compression for On-Device Plant Disease Detection in Resource-Constrained Agricultural Field Conditions",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-07T14:38:35.513858+00:00"
   }
 }
