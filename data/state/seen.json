@@ -11203,5 +11203,185 @@
     "title": "Lightweight Vision Transformer Compression for On-Device Plant Disease Detection in Resource-Constrained Agricultural Field Conditions",
     "source": "arXiv cs.AI recent",
     "first_seen": "2026-09-07T14:38:35.513858+00:00"
+  },
+  "https://www.anthropic.com/threat-intelligence-report-september-2026": {
+    "title": "Detecting and countering misuse of AI: September 2026",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/perplexity-improving-accuracy-with-astra": {
+    "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/scaling-storage-one-billion-users-part-one": {
+    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/cognition-devin-testing-with-astra": {
+    "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials": {
+    "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/put-data-to-work": {
+    "title": "Now everyone can put data to work",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/introducing-chatgpt-financial-services": {
+    "title": "Introducing ChatGPT for Financial Services",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/expanding-ai-access-us-government": {
+    "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/introducing-the-agents-api": {
+    "title": "Introducing the Agents API",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/introducing-gpt-live-1-in-the-api": {
+    "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/ai-policy-window": {
+    "title": "The AI policy window is open. We need to act.",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/gpt-6-astra-next-generation-work": {
+    "title": "GPT-6 Astra: The next generation in intelligence for work",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/paul-christiano-joins-openai-foundation-board": {
+    "title": "Paul Christiano joins OpenAI Foundation Board",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/codex-quantum-computing-experiments": {
+    "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/the-work-now-within-reach": {
+    "title": "The Work Now Within Reach",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/introducing-chatgpt-images-2-5": {
+    "title": "Introducing ChatGPT Images 2.5",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/navier-stokes-solution": {
+    "title": "On the Navier–Stokes Millennium Prize Problem",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/teen-development-research-grants": {
+    "title": "Funding grants for new research into AI and teen development",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms": {
+    "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/1password": {
+    "title": "1Password increases engineering productivity 21% with Codex",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://openai.com/index/fyxer": {
+    "title": "How Fyxer built an AI executive assistant people trust",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://huggingface.co/blog/asyncgrpo-lora-hfjobs": {
+    "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://huggingface.co/blog/gradio-workflow-1111": {
+    "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series": {
+    "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom": {
+    "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.34.0": {
+    "title": "ollama/ollama v0.34.0: v0.34.0",
+    "source": "Ollama releases",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10964": {
+    "title": "ggml-org/llama.cpp b10964: b10964",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10956": {
+    "title": "ggml-org/llama.cpp b10956: b10956",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10955": {
+    "title": "ggml-org/llama.cpp b10955: b10955",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10952": {
+    "title": "ggml-org/llama.cpp b10952: b10952",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10951": {
+    "title": "ggml-org/llama.cpp b10951: b10951",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10950": {
+    "title": "ggml-org/llama.cpp b10950: b10950",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10948": {
+    "title": "ggml-org/llama.cpp b10948: b10948",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10947": {
+    "title": "ggml-org/llama.cpp b10947: b10947",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10946": {
+    "title": "ggml-org/llama.cpp b10946: b10946",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b10944": {
+    "title": "ggml-org/llama.cpp b10944: b10944",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-14T15:31:15.351777+00:00"
   }
 }
