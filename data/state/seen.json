@@ -11383,5 +11383,270 @@
     "title": "ggml-org/llama.cpp b10944: b10944",
     "source": "llama.cpp releases",
     "first_seen": "2026-09-14T15:31:15.351777+00:00"
+  },
+  "https://www.anthropic.com/news/life-sciences-verification-program": {
+    "title": "Introducing the Life Sciences Verification Program",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://www.anthropic.com/institute/measuring-pace-of-ai-development": {
+    "title": "Measurements for understanding the pace of AI development inside frontier labs",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://www.anthropic.com/news/accenture-embedded-evaluation": {
+    "title": "Partnering with Accenture on embedded evaluation",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/v7": {
+    "title": "How V7 gives AI agents institutional memory",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/australian-youth-safety-blueprint": {
+    "title": "Introducing the Australian Youth Safety Blueprint",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/cooley-gopublic": {
+    "title": "How Cooley is accelerating IPO work with ChatGPT",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/astra-for-law": {
+    "title": "Introducing Astra for Law",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life": {
+    "title": "Helping older adults use AI in everyday life",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/reimagining-advertising-with-ai": {
+    "title": "Reimagining advertising with AI",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/hex-gpt-6-astra": {
+    "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/how-to-connect-ai-usage-to-business-value": {
+    "title": "How to connect AI usage to business value",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/model-misalignment-reporting-framework": {
+    "title": "Our framework for reporting model misalignment",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/unlocking-new-ways-of-working": {
+    "title": "How workers are unlocking new ways of working",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/academy/prompting": {
+    "title": "Prompting fundamentals",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/disrupting-malicious-uses-of-ai-romance-scam": {
+    "title": "Romance scams: AI-enabled romance scam workflows",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/disrupting-malicious-uses-of-ai-cyber-special-operations": {
+    "title": "“Cyber Special Operations”: China-linked influence planning",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/disrupting-malicious-uses-of-ai-fish-food": {
+    "title": "Operation “Fish Food”: Russia-origin content farm activity",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/disrupting-malicious-uses-of-ai-trolling-stone": {
+    "title": "Operation “Trolling Stone”: Russia-linked influence activity",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/disrupting-malicious-uses-of-ai-no-bell": {
+    "title": "Operation “No Bell”: Coordinated criticism of the US and allies",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/disrupting-malicious-uses-of-ai-date-bait": {
+    "title": "Operation “Date Bait”: AI-enabled scam targeting loveseekers",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/disrupting-malicious-uses-of-ai-false-witness": {
+    "title": "Operation “False Witness”: Fake recovery service impersonating authorities",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://openai.com/index/disrupting-malicious-uses-of-ai-silver-lining-playbook": {
+    "title": "Silver lining playbook: Likely China-origin activity targeting US persons",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an": {
+    "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://huggingface.co/blog/tokenizers-v1": {
+    "title": "tokenizers v1: encode, decode and scaling, measured",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://huggingface.co/blog/ibm-research/altk-evolve-consistency": {
+    "title": "Your Agent Aced the Task. Will It Do It Again?",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.34.3-rc1": {
+    "title": "ollama/ollama v0.34.3-rc1: v0.34.3",
+    "source": "Ollama releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.34.2": {
+    "title": "ollama/ollama v0.34.2: v0.34.2",
+    "source": "Ollama releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.34.1": {
+    "title": "ollama/ollama v0.34.1: v0.34.1",
+    "source": "Ollama releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11073": {
+    "title": "ggml-org/llama.cpp b11073: b11073",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11071": {
+    "title": "ggml-org/llama.cpp b11071: b11071",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11070": {
+    "title": "ggml-org/llama.cpp b11070: b11070",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11069": {
+    "title": "ggml-org/llama.cpp b11069: b11069",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11068": {
+    "title": "ggml-org/llama.cpp b11068: b11068",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11067": {
+    "title": "ggml-org/llama.cpp b11067: b11067",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11065": {
+    "title": "ggml-org/llama.cpp b11065: b11065",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11064": {
+    "title": "ggml-org/llama.cpp b11064: b11064",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11063": {
+    "title": "ggml-org/llama.cpp b11063: b11063",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11062": {
+    "title": "ggml-org/llama.cpp b11062: b11062",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.22086v1": {
+    "title": "Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.22068v1": {
+    "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.22067v1": {
+    "title": "Value-Sensitive Delegation in Everyday AI Agent Use: Evidence from OpenClaw",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.22039v1": {
+    "title": "Gricea: An Open Science Platform for Conversational AI Research",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.22008v1": {
+    "title": "DiaVLo: Diagnosing Behaviours of Vision-Language Models",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.21997v1": {
+    "title": "Bayesian Belief Layer for Controllable Opinion Dynamics in LLM Agents",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.21996v1": {
+    "title": "A Lie Detector Test for Language Models: Reading Knowledge a Model Won't Reveal",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.21967v1": {
+    "title": "NemotronLabs VoiceChat: An Open Full-duplex Speech-to-Speech Model with Tool Calling Capabilities",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.21962v1": {
+    "title": "Learning Cardiac Features: ECG Biometrics Across Time and~Exercise",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.21942v1": {
+    "title": "When Should a Failing Robot Ask? Initiating Corrective Human-Robot Dialogue from Audited Sensor Evidence",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.21940v1": {
+    "title": "AutoViewMem: Self-Configuring Orthogonal Views for Conversational Long-Term Memory",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.21924v1": {
+    "title": "What Should We Ask Next? Retrieval-Aware Question Learning under Partial Evidence",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.21888v1": {
+    "title": "Detecting Pretraining Data in Large Language Models from a Free-Energy Perspective",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.21879v1": {
+    "title": "Benchmarking the Explanatory Quality of Open-Weight Vision-Language Models in Face Recognition",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "http://arxiv.org/abs/2609.21870v1": {
+    "title": "Neural Cellular Automata Learn General Features in their Hidden Channels",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-21T15:31:41.277951+00:00"
   }
 }
