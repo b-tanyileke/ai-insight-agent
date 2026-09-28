@@ -11648,5 +11648,285 @@
     "title": "Neural Cellular Automata Learn General Features in their Hidden Channels",
     "source": "arXiv cs.AI recent",
     "first_seen": "2026-09-21T15:31:41.277951+00:00"
+  },
+  "https://www.anthropic.com/features/ebola-response": {
+    "title": "The Situation Report",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://www.anthropic.com/claude-opus-5-5": {
+    "title": "Introducing Claude Opus 5.5",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system": {
+    "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/proaction": {
+    "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/two-years-of-openai-academy": {
+    "title": "Two years of OpenAI Academy",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense": {
+    "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/sam-altman-un-security-council-remarks": {
+    "title": "Sam Altman’s remarks at the United Nations Security Council",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/harvey-from-context-to-confidence-with-astra": {
+    "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/invideo-builds-with-gpt-6-astra": {
+    "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/ringg": {
+    "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/introducing-mentalhealthbench": {
+    "title": "Introducing MentalHealthBench",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan": {
+    "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/airbnb-gpt-6-astra": {
+    "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/grab-openai-ai-skills-southeast-asia": {
+    "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/better-prompt-caching-for-gpt-6": {
+    "title": "Better prompt caching for GPT-6",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/introducing-gpt-6-sol-and-luna": {
+    "title": "Introducing GPT-6 Sol and Luna",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/parallel-cuts-time-and-cost-with-astra": {
+    "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/priorities-principles-third-party-assessments": {
+    "title": "Priorities and principles for effective third party assessments",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra": {
+    "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/advisory-group-on-mathematics-and-ai": {
+    "title": "Advisory Group on Mathematics and Artificial Intelligence",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/building-standards-next-phase-ai": {
+    "title": "Building standards for the next phase of AI",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://openai.com/index/expanding-openai-academy-with-new-learning-paths": {
+    "title": "Expanding OpenAI Academy with new learning paths",
+    "source": "OpenAI News",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://huggingface.co/blog/Hcompany/holo4": {
+    "title": "Holo4: powering generalist computer-use agents",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark": {
+    "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp": {
+    "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://huggingface.co/blog/evaleval-aisi": {
+    "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://huggingface.co/blog/transformers-llama-cpp-quants": {
+    "title": "Transformers now runs llama.cpp quants",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://huggingface.co/blog/omlx": {
+    "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.0-rc0": {
+    "title": "ollama/ollama v0.40.0-rc0: v0.40.0",
+    "source": "Ollama releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.34.4": {
+    "title": "ollama/ollama v0.34.4: v0.34.4",
+    "source": "Ollama releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.34.3": {
+    "title": "ollama/ollama v0.34.3: v0.34.3",
+    "source": "Ollama releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11235": {
+    "title": "ggml-org/llama.cpp b11235: b11235",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11234": {
+    "title": "ggml-org/llama.cpp b11234: b11234",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11233": {
+    "title": "ggml-org/llama.cpp b11233: b11233",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11232": {
+    "title": "ggml-org/llama.cpp b11232: b11232",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11229": {
+    "title": "ggml-org/llama.cpp b11229: b11229",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11228": {
+    "title": "ggml-org/llama.cpp b11228: b11228",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11227": {
+    "title": "ggml-org/llama.cpp b11227: b11227",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11226": {
+    "title": "ggml-org/llama.cpp b11226: b11226",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11225": {
+    "title": "ggml-org/llama.cpp b11225: b11225",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11224": {
+    "title": "ggml-org/llama.cpp b11224: b11224",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31619v1": {
+    "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31607v1": {
+    "title": "Statistical attribute alignment for black-box generative AI via output post-processing",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31587v1": {
+    "title": "Compact Documentation for Coding Agents: A Benchmark, an Optimizer, and Why It Does Not Transfer",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31572v1": {
+    "title": "OC-GS: Gaussian Splatting for Irregular Turntable Capture",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31569v1": {
+    "title": "Adapting for AI: How elementary teachers adjust their practices for an AI-integrated curriculum",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31568v1": {
+    "title": "DeepEdu-v1: Efficient and Scalable Agentic LLMs for Vietnamese Education",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31563v1": {
+    "title": "Multi-agent Scaling Across Disjunctive and Compensatory Tasks",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31544v1": {
+    "title": "A Flow Matching Framework for Neural Representational Dissimilarity",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31540v1": {
+    "title": "Can You Check That? The Checkability Boundary for Local LLM Network Automation",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31509v1": {
+    "title": "ClearGS: Reliability-Aware Gaussian Splatting from Handheld Videos",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31506v1": {
+    "title": "Evaluating Cultural Awareness of LLMs for Haitian Creole",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31505v1": {
+    "title": "Prompt Minimization: Reducing Input Redundancy Without Sacrificing Output Fidelity",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31491v1": {
+    "title": "UQ-LOB: Uncertainty-Aware Limit Order Book Mid-Price Forecasting",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31482v1": {
+    "title": "\"AI is (not) the new...\": A Diagnostic Analogy Framework for Generative AI's Cultural Impacts",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "http://arxiv.org/abs/2609.31473v1": {
+    "title": "Game Arena: Strategic LLM Evaluation in Competitive Environments",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-09-28T17:13:02.798040+00:00"
   }
 }
