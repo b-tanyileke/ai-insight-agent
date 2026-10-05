@@ -11928,5 +11928,280 @@
     "title": "Game Arena: Strategic LLM Evaluation in Competitive Environments",
     "source": "arXiv cs.AI recent",
     "first_seen": "2026-09-28T17:13:02.798040+00:00"
+  },
+  "https://www.anthropic.com/claude-sonnet-5-5": {
+    "title": "Introducing Claude Sonnet 5.5",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://www.anthropic.com/news/barclays-scales-claude": {
+    "title": "Barclays scales Claude to upgrade operations and improve client experience",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://www.anthropic.com/news/claude-frontier-academy": {
+    "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/eu-text-provenance": {
+    "title": "Our approach to EU text provenance rules",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/new-chatgpt-ads-format-and-measurement": {
+    "title": "Building advertising for the way people use AI",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/practical-guide-building-gpt-6": {
+    "title": "A model guide for the GPT-6 family",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/chatham-financial": {
+    "title": "Chatham scales its capital markets expertise with OpenAI",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/the-eternal-complement": {
+    "title": "The eternal complement",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/albertsons-reimagining-retail": {
+    "title": "How Albertsons Companies is reimagining retail from the inside out",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/the-den-family-social": {
+    "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign": {
+    "title": "Disrupting a coordinated model-distillation campaign",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/helping-small-businesses-put-ai-to-work": {
+    "title": "Helping small businesses put AI to work",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/devday-2026-recap": {
+    "title": "DevDay 2026 Recap",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/introducing-gpt-6-1-sol": {
+    "title": "Introducing GPT-6.1 Sol",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/introducing-dots": {
+    "title": "Introducing dots",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/how-we-will-do-better-for-australia": {
+    "title": "How we will do better for Australia",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/towards-safety-cases-for-frontier-ai-training": {
+    "title": "Towards safety cases for frontier AI training",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/lenfest-ai-collaborative-expansion": {
+    "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/form/codex-originals": {
+    "title": "Are you a Codex Original?",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://openai.com/index/basis-tax-workbook-with-astra": {
+    "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://huggingface.co/blog/microsoft/thinkingbox": {
+    "title": "The Agent Said It Was Done. The Database Disagreed.",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://huggingface.co/blog/allenai/astabrief": {
+    "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://huggingface.co/blog/ServiceNow-AI/autosynthdata": {
+    "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://huggingface.co/blog/open-tts-leaderboard": {
+    "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://huggingface.co/blog/nvidia/kumo-tabular": {
+    "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source": {
+    "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://huggingface.co/blog/rl-environments": {
+    "title": "Welcome RL Environments to the hub",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.0-rc3": {
+    "title": "ollama/ollama v0.40.0-rc3: v0.40.0",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.35.1": {
+    "title": "ollama/ollama v0.35.1: v0.35.1",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.35.0": {
+    "title": "ollama/ollama v0.35.0: v0.35.0",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0": {
+    "title": "ggml-org/llama.cpp v0.6.0: v0.6.0",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11429": {
+    "title": "ggml-org/llama.cpp b11429: b11429",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11425": {
+    "title": "ggml-org/llama.cpp b11425: b11425",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11424": {
+    "title": "ggml-org/llama.cpp b11424: b11424",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11418": {
+    "title": "ggml-org/llama.cpp b11418: b11418",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11417": {
+    "title": "ggml-org/llama.cpp b11417: b11417",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11415": {
+    "title": "ggml-org/llama.cpp b11415: b11415",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11414": {
+    "title": "ggml-org/llama.cpp b11414: b11414",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11413": {
+    "title": "ggml-org/llama.cpp b11413: b11413",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11412": {
+    "title": "ggml-org/llama.cpp b11412: b11412",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03717v1": {
+    "title": "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03715v1": {
+    "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03713v1": {
+    "title": "What Should World Models Forget? Stratified Retention for Continual Adaptation",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03710v1": {
+    "title": "EyeRobot 2.0: Active Gaze for Precise Manipulation without Wrist Cameras",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03693v1": {
+    "title": "Transcriptome-informed multi-modal AI for predicting neoadjuvant therapy response from breast cancer biopsies",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03675v1": {
+    "title": "FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03656v1": {
+    "title": "Revisiting Input Time-frequency Representations in Multi-pitch Estimation for Vocal Ensembles",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03651v1": {
+    "title": "MRVQ: One Resident Index for Dimension- and Rate-Elastic Vector Search",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03649v1": {
+    "title": "On-Board Anomaly Detection for Efficient Marine Environmental Monitoring",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03639v1": {
+    "title": "Do Large Language Models Know Colombian Law? A Reliability Benchmark for the Colombian Legal System",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03636v1": {
+    "title": "LoGo: Local-Global Rewards for Consistent Long-Horizon Video Generation",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03634v1": {
+    "title": "Credit Where It Matters: Dependency-Aware Policy Optimization for Terminal Agents",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03631v1": {
+    "title": "NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03626v1": {
+    "title": "Depth as Time in One-Step Generative Models",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
+  },
+  "http://arxiv.org/abs/2610.03618v1": {
+    "title": "Low-Cost Video--Time Priors as a Strong Baseline for EEG--fNIRS Emotion Regression on Familiar Videos",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-05T17:38:23.399753+00:00"
   }
 }
