@@ -12598,5 +12598,270 @@
     "title": "DualQuant: Dual-scale Calibration-free Weight-and-Activation Quantization for LLMs",
     "source": "arXiv cs.AI recent",
     "first_seen": "2026-10-12T18:25:36.972023+00:00"
+  },
+  "https://www.anthropic.com/news/singapore-office-opening": {
+    "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://www.anthropic.com/news/2026-us-midterms": {
+    "title": "Preparing for the 2026 US midterms",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://www.anthropic.com/news/an-update-on-independent-evaluators": {
+    "title": "An update on independent evaluators",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://www.anthropic.com/news/public-benefit-fund": {
+    "title": "Investing in the public benefit",
+    "source": "Anthropic News (unofficial mirror)",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/itau-generative-ai": {
+    "title": "How Itaú is building generative AI for its entire customer base",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/benefit-street-partners": {
+    "title": "Benefit Street Partners answers questions faster with Codex",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/stack-overflow-chatgpt-plugin": {
+    "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/introducing-the-rosalind-academic-plan": {
+    "title": "Bringing GPT-Rosalind to academic research labs",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/teaching-students-to-think-and-learn-through-questions": {
+    "title": "Teaching students to think and learn through questions",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/sullivan-cromwell": {
+    "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/amp-beyond-coding": {
+    "title": "Amp puts AI agents to work beyond code with OpenAI models",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/sentinelone": {
+    "title": "SentinelOne cuts malware analysis from weeks to hours",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/third-moment-research": {
+    "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/block-ai-powered-security": {
+    "title": "How Block is building AI-powered security with OpenAI technology",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic": {
+    "title": "The EU’s next chapter in AI is agentic",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/higgsfield-longer-videos-voice": {
+    "title": "Higgsfield takes AI video from 1 minute to over 10",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://huggingface.co/blog/nvidia/scaling-indic-pretraining": {
+    "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://huggingface.co/blog/reflection-beam": {
+    "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://huggingface.co/blog/ibm-granite/granite-switch-4-1": {
+    "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes": {
+    "title": "Apertus 1.5 Release Notes",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://huggingface.co/blog/meta-muse-spark-open": {
+    "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://huggingface.co/blog/flux-3": {
+    "title": "Welcome FLUX.3 Image Klein in Diffusers",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://huggingface.co/blog/allenai/hiro-acev2": {
+    "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b": {
+    "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.7-rc0": {
+    "title": "ollama/ollama v0.40.7-rc0: v0.40.7",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.6": {
+    "title": "ollama/ollama v0.40.6: v0.40.6",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.5": {
+    "title": "ollama/ollama v0.40.5: v0.40.5",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.4": {
+    "title": "ollama/ollama v0.40.4: v0.40.4",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11734": {
+    "title": "ggml-org/llama.cpp b11734: b11734",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11732": {
+    "title": "ggml-org/llama.cpp b11732: b11732",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11731": {
+    "title": "ggml-org/llama.cpp b11731: b11731",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11729": {
+    "title": "ggml-org/llama.cpp b11729: b11729",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11727": {
+    "title": "ggml-org/llama.cpp b11727: b11727",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11724": {
+    "title": "ggml-org/llama.cpp b11724: b11724",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11723": {
+    "title": "ggml-org/llama.cpp b11723: b11723",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11722": {
+    "title": "ggml-org/llama.cpp b11722: b11722",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11721": {
+    "title": "ggml-org/llama.cpp b11721: b11721",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11720": {
+    "title": "ggml-org/llama.cpp b11720: b11720",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23854v1": {
+    "title": "Rethinking the design space of Vanilla Pixel Diffusion Transformers",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23847v1": {
+    "title": "Behavioral Couplings: From Formation to Behavioral Emergence in Language Models",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23845v1": {
+    "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23826v1": {
+    "title": "Self-Building Labs",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23801v1": {
+    "title": "Beyond SAEs: Consistent Concept Discovery with Sparse Coding",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23796v1": {
+    "title": "FuTransformer: FP8 prefill and INT4 decode for Llama-style inference on Hopper",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23791v1": {
+    "title": "DrugHarness: An Evolvable Agent Harness for Computational Drug Discovery",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23722v1": {
+    "title": "Beyond Large Language Models: A Mental World Model Framework for Mental Modeling, Simulation, Evolution, and Interpretability",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23716v1": {
+    "title": "Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23709v1": {
+    "title": "GLOBE: Evolving Structured Agentic Memory for E-commerce Product Optimization in Generative Search",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23673v1": {
+    "title": "On the possibilities and limitations of LLM-based multi-agent systems for multi-criteria decision-making in healthcare operations management",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23670v1": {
+    "title": "OwlSight: A Panoramic Monitor for Chain-of-Thought Reasoning",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23668v1": {
+    "title": "TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23625v1": {
+    "title": "PresenceBench: An Exploratory Evaluation of Large Language Model Adaptation to User State",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "http://arxiv.org/abs/2610.23617v1": {
+    "title": "GEMS: Molecular Structure Elucidation as Learned Search over Isomer Graphs",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-19T16:03:29.041871+00:00"
   }
 }
