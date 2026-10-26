@@ -12863,5 +12863,315 @@
     "title": "GEMS: Molecular Structure Elucidation as Learned Search over Isomer Graphs",
     "source": "arXiv cs.AI recent",
     "first_seen": "2026-10-19T16:03:29.041871+00:00"
+  },
+  "https://openai.com/index/fanatics-streamline-fan-experience": {
+    "title": "How Fanatics and OpenAI streamline the fan experience",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/scaling-storage-one-billion-users-part-two": {
+    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/securing-our-frontier-model-training-environment": {
+    "title": "Securing our frontier model training environment",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/openai-nask-ai-safety-security-partnership": {
+    "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/decisions-api": {
+    "title": "Build more responsive apps with the Decisions API",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/forward-deployed-engineering-means": {
+    "title": "What FDE means at OpenAI",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/uber-chatgpt-work-rollout": {
+    "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/att-legal": {
+    "title": "How AT&T is rethinking in-house legal work with OpenAI",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/broad-access-through-consistent-standards": {
+    "title": "Broad access through consistent standards",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/openai-models-google-cloud": {
+    "title": "OpenAI models are coming to Google Cloud",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities": {
+    "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/chatgpt-ads-expands-26-new-countries": {
+    "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/scaling-ai-research-for-complex-biological-data": {
+    "title": "Using thousands of AI agents to uncover new leads in biological data",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/cloudflare-cyber": {
+    "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/building-chatgpt-ad-stack": {
+    "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/empowering-cyber-defenders": {
+    "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/ted-taylor-restaurant": {
+    "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/terminal-x": {
+    "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/openai-to-acquire-orchestra-bio": {
+    "title": "OpenAI acquires Orchestra Bio",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://openai.com/index/low-resource-programming-languages": {
+    "title": "Advancing coding in low‑resource programming languages",
+    "source": "OpenAI News",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/allenai/litpivot": {
+    "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/torch-neuronx-model-support": {
+    "title": "Does Your Model Run on AWS Trainium? Look It Up",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/microsoft/thinkingbox-training": {
+    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1": {
+    "title": "Ensemble forecasting with IBM Granite time-series models",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/nvidia/kumo-relational": {
+    "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization": {
+    "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1": {
+    "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/ibm-granite/granite-speech-5": {
+    "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/hf-torchtpu": {
+    "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/anylanguagemodel-1-0": {
+    "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/mps-pytorch-2-15": {
+    "title": "MPS in PyTorch 2.15",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://huggingface.co/blog/hf-torchneuron": {
+    "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.11": {
+    "title": "ollama/ollama v0.40.11: v0.40.11",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.10": {
+    "title": "ollama/ollama v0.40.10: v0.40.10",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.9": {
+    "title": "ollama/ollama v0.40.9: v0.40.9",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.8": {
+    "title": "ollama/ollama v0.40.8: v0.40.8",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.7": {
+    "title": "ollama/ollama v0.40.7: v0.40.7",
+    "source": "Ollama releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11900": {
+    "title": "ggml-org/llama.cpp b11900: b11900",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11899": {
+    "title": "ggml-org/llama.cpp b11899: b11899",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11898": {
+    "title": "ggml-org/llama.cpp b11898: b11898",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11897": {
+    "title": "ggml-org/llama.cpp b11897: b11897",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11896": {
+    "title": "ggml-org/llama.cpp b11896: b11896",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11895": {
+    "title": "ggml-org/llama.cpp b11895: b11895",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11890": {
+    "title": "ggml-org/llama.cpp b11890: b11890",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11889": {
+    "title": "ggml-org/llama.cpp b11889: b11889",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11888": {
+    "title": "ggml-org/llama.cpp b11888: b11888",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b11887": {
+    "title": "ggml-org/llama.cpp b11887: b11887",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32978v1": {
+    "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32971v1": {
+    "title": "RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32969v1": {
+    "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32948v1": {
+    "title": "Beyond Discrete Tokens: Preserving Numerical Continuity in Medical Vision-Language Models",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32945v1": {
+    "title": "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32933v1": {
+    "title": "Yalda-Embedding: Open Development of a Competitive Persian Retrieval Model",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32919v1": {
+    "title": "SemantEq: Faithful Bidirectional Equivalence of Formal Statements",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32891v1": {
+    "title": "Green Code or Costly Code? Evaluating the Energy Costs of Iterative LLM-Based Code Optimizations",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32890v1": {
+    "title": "Closing the Modality Gap via Simplex-Constrained Representations",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32881v1": {
+    "title": "NgramRL: Accelerating RL Post-Training for Structured Generation via Rollout-Aware N-gram Speculative Decoding",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32878v1": {
+    "title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32874v1": {
+    "title": "Do \"True\" and \"False\" Add Up to One? Complement Consistency in LLM-Agent Opinion Simulations",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32869v1": {
+    "title": "From Deliberately Constructed Systemic Representations of the World of Activity to Dialogue: A Five-Level Communication Architecture for Strong Language-Based ASI",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32866v1": {
+    "title": "Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
+  },
+  "http://arxiv.org/abs/2610.32864v1": {
+    "title": "PoKER: A Probability of Kill Estimation Rate Model for Air-to-Air Missiles Using Machine Learning on Stochastic Targets",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-10-26T15:40:21.696943+00:00"
   }
 }
