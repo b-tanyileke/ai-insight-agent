@@ -14083,5 +14083,315 @@
     "title": "When to Trust Simulated Patient Responses:Support-Gated World Models for Vasopressor Decision Support",
     "source": "arXiv cs.AI recent",
     "first_seen": "2026-11-16T19:07:09.257186+00:00"
+  },
+  "https://openai.com/business/learn/connected-intelligence-for-in-house-legal": {
+    "title": "Connected intelligence for in-house legal",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/perplexity-and-intelligence": {
+    "title": "Perplexity and Intelligence",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/combatting-adversarial-distillation": {
+    "title": "Combatting adversarial distillation",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/business/customer-stories/hebbia": {
+    "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/introducing-medchembench": {
+    "title": "Can AI help scientists identify promising drug candidates?",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast": {
+    "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/business/learn/codex-security-plugin-demo": {
+    "title": "Explore the Codex Security Plugin",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/business/learn/pr-scans-demo": {
+    "title": "See PR scans in action",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/business/learn/deploying-daybreak-red": {
+    "title": "Deploying Daybreak Red",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/business/learn/daybreak-blue-onboarding-demo": {
+    "title": "Get started with Daybreak Blue",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/the-silent-consensus": {
+    "title": "The Silent Consensus",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/research-acceleration-jagged-frontier": {
+    "title": "Research acceleration: The jagged frontier",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/inside-the-codex-sandbox": {
+    "title": "Inside the Codex sandbox",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/managing-frontier-ai-risk": {
+    "title": "Managing frontier AI risk: From training to deployment",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/advancing-chip-design-with-our-models": {
+    "title": "Advancing chip design with OpenAI models",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership": {
+    "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/introducing-gpt-6-2-astra-sol": {
+    "title": "Introducing GPT-6.2 Astra and Sol",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai": {
+    "title": "Strengthening NATO and allied cyber defenses with AI",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/introducing-chatgpt-for-sales": {
+    "title": "Introducing ChatGPT for Sales",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/introducing-openai-for-chile": {
+    "title": "Introducing OpenAI for Chile",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/index/astra-law-6-2": {
+    "title": "Astra for Law leads in legal intelligence",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/business/customer-stories/revolut": {
+    "title": "How Revolut raises ambition without lowering the bar",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/business/customer-stories/holiday-extras-dots": {
+    "title": "At Holiday Extras, dots get to work before anyone asks",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/ads/blog/chatgpt-ads-increases-its-market-presence": {
+    "title": "ChatGPT Ads increases its market presence in 44 countries",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/ads/customers/vistaprint": {
+    "title": "How VistaPrint helps small businesses get the word out",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://huggingface.co/blog/allenai/robotrack": {
+    "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://huggingface.co/blog/agentic-evals": {
+    "title": "How to build and maintain an agentic evaluation",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://huggingface.co/blog/inkling2mini": {
+    "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://huggingface.co/blog/harness-adapters-at-scale": {
+    "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin": {
+    "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time": {
+    "title": "Why your fine-tuning job takes longer than the FLOPs say",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse": {
+    "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://huggingface.co/blog/moe-expert-streaming": {
+    "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://huggingface.co/blog/rumble-2-flash": {
+    "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
+    "source": "Hugging Face Blog",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.17": {
+    "title": "ollama/ollama v0.40.17: v0.40.17",
+    "source": "Ollama releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ollama/ollama/releases/tag/v0.40.16": {
+    "title": "ollama/ollama v0.40.16: v0.40.16",
+    "source": "Ollama releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b12651": {
+    "title": "ggml-org/llama.cpp b12651: b12651",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b12650": {
+    "title": "ggml-org/llama.cpp b12650: b12650",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b12649": {
+    "title": "ggml-org/llama.cpp b12649: b12649",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b12648": {
+    "title": "ggml-org/llama.cpp b12648: b12648",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b12647": {
+    "title": "ggml-org/llama.cpp b12647: b12647",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b12646": {
+    "title": "ggml-org/llama.cpp b12646: b12646",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b12645": {
+    "title": "ggml-org/llama.cpp b12645: b12645",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b12644": {
+    "title": "ggml-org/llama.cpp b12644: b12644",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b12643": {
+    "title": "ggml-org/llama.cpp b12643: b12643",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://github.com/ggml-org/llama.cpp/releases/tag/b12642": {
+    "title": "ggml-org/llama.cpp b12642: b12642",
+    "source": "llama.cpp releases",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27983v1": {
+    "title": "Optimal Linear Regression Without a Variance",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27963v1": {
+    "title": "Non-penetrating World Models",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27962v1": {
+    "title": "Model Carving: Training Transformers That Optimize Their Own Topology",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27924v1": {
+    "title": "BioEmu2: Scalable Emulation of Biomolecular Dynamics",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27919v1": {
+    "title": "SUAF: Spectral Universal Advantage Features for Zero-Shot Policy Improvement",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27915v1": {
+    "title": "StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27913v1": {
+    "title": "Star Panoptic Quality: Selectively Evaluating Split and Merged Instances",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27911v1": {
+    "title": "Functional Depth Is Learned: Isolating the Computation That Layers Produce Only Together",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27910v1": {
+    "title": "Decision Columns as an Index: Interpretable Embeddings for Explainable Entity Matching and Search",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27899v1": {
+    "title": "The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27895v1": {
+    "title": "TEA-Bench-BR: Can Coding Agents Turn a Branching Clinical Specification into Correct Code?",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27891v1": {
+    "title": "Speculative Decoding Is Less Speculative Than You Think",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27876v1": {
+    "title": "LesionAgent: Training-Free Agentic Tumor Tracking and Response Assessment in Longitudinal CT",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27870v1": {
+    "title": "Beyond Visual Fidelity: Comparing Categorical and Continuous World Models",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "http://arxiv.org/abs/2611.27868v1": {
+    "title": "Integrating Generative Artificial Intelligence with Learning Style Models: Opportunities, Challenges, and Future Directions",
+    "source": "arXiv cs.AI recent",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
+  },
+  "https://openai.com/business/customer-stories/sumitomo-life": {
+    "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+    "source": "OpenAI News",
+    "first_seen": "2026-11-23T20:45:11.640329+00:00"
   }
 }
